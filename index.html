@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio institucional del Liceo N.° 3 Brigadier General Juan Antonio Lavalleja de Rivera, Uruguay.">
+  <title>Liceo N.° 3 Brigadier General Juan Antonio Lavalleja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="encabezado" id="encabezado">
+    <nav class="barra-navegacion" aria-label="Navegacion principal">
+      <a class="marca" href="index.html" aria-label="Ir al inicio">
+        <img class="logo-marca" src="img/logo.png" alt="Logo del Liceo N.° 3">
+        <span>
+          <strong>Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”</strong>
+          <small>Rivera, Uruguay</small>
+        </span>
+      </a>
+
+      <button class="boton-menu" id="botonMenu" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a href="comunicados.html">Comunicados</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="#contacto-pie">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-fondo"></div>
+      <div class="contenedor hero-contenido">
+        <div class="hero-texto animar-entrada">
+          <p class="etiqueta">Sitio institucional</p>
+          <h1>Liceo N.° 3</h1>
+          <p class="subtitulo">“Brigadier General Juan Antonio Lavalleja”</p>
+          <p class="descripcion">
+            Un espacio institucional para compartir comunicados, recursos,
+            proyectos, actividades y experiencias educativas durante todo el año.
+          </p>
+          <div class="acciones">
+            <a class="boton boton-principal" href="comunicados.html">Ver comunicados</a>
+            <a class="boton boton-secundario" href="proyectos.html">Conocer proyectos</a>
+          </div>
+        </div>
+
+        <div class="hero-imagen animar-entrada">
+          <div class="marco-imagen">
+            <img src="img/imageninicio.jpg" alt="Imagen principal del Liceo N.° 3 de Rivera">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja-destacada" aria-label="Actividades destacadas">
+      <div class="contenedor grilla-actividades">
+        <article class="actividad-destacada">
+          <div class="actividad-imagen">
+            <span>Imagen de actividad</span>
+          </div>
+          <h2>Actividades del liceo</h2>
+        </article>
+        <article class="actividad-destacada">
+          <div class="actividad-imagen">
+            <span>Imagen de proyecto</span>
+          </div>
+          <h2>Proyectos estudiantiles</h2>
+        </article>
+        <article class="actividad-destacada">
+          <div class="actividad-imagen">
+            <span>Imagen institucional</span>
+          </div>
+          <h2>Comunidad educativa</h2>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion resumen-inicio">
+      <div class="contenedor grilla-dos-columnas">
+        <div class="bloque-titulo revelar">
+          <p class="etiqueta">Inicio</p>
+          <h2>Un portal para acompañar la vida del liceo</h2>
+        </div>
+        <div class="revelar">
+          <p>
+            Esta página principal funciona como entrada al sitio. Desde aquí se
+            accede a la información institucional, comunicados, proyectos,
+            recursos, galería y datos de contacto.
+          </p>
+          <div class="acciones acciones-oscuras">
+            <a class="boton boton-principal" href="institucional.html">Conocer el liceo</a>
+            <a class="boton boton-azul" href="recursos.html">Ver recursos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-clara">
+      <div class="contenedor">
+        <div class="encabezado-seccion revelar">
+          <p class="etiqueta">Últimos comunicados</p>
+          <h2>Información destacada</h2>
+          <p>Una vista rápida de los comunicados más recientes.</p>
+        </div>
+        <div class="grilla-tarjetas" id="contenedorComunicados" data-limite="3"></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion revelar">
+          <p class="etiqueta">Proyectos</p>
+          <h2>Propuestas en movimiento</h2>
+          <p>Algunos espacios de trabajo que pueden destacarse en la portada.</p>
+        </div>
+        <div class="grilla-proyectos" id="contenedorProyectos" data-limite="3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto-pie">
+    <div class="contenedor pie-grid">
+      <div>
+        <strong>Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”</strong>
+        <p>Sitio institucional en construcción · <span id="anioActual"></span></p>
+      </div>
+      <div class="contacto-pie">
+        <p><strong>Contacto</strong></p>
+        <p>Dirección: Tranqueras 853</p>
+        <p>Teléfono: 4622 3244</p>
+        <p>Departamento: Rivera</p>
+        <p>Turnos: Diurno matutino extendido, diurno vespertino extendido y nocturno</p>
+        <a class="instagram-pie" href="https://www.instagram.com/liceo_3rivera/" target="_blank" rel="noopener noreferrer" aria-label="Instagram del Liceo N.° 3">
+          <img src="img/instagram.jpg" alt="Instagram">
+        </a>
+      </div>
+      <nav class="enlaces-pie" aria-label="Enlaces rapidos">
+        <a href="index.html">Inicio</a>
+        <a href="institucional.html">Institucional</a>
+        <a href="comunicados.html">Comunicados</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="galeria.html">Galería</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
