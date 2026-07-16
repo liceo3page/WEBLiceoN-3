@@ -1,53 +1,127 @@
 // Cambia estos datos durante el año para actualizar el sitio.
 const comunicados = [
   {
-    id: "bienvenida-sitio",
-    titulo: "Bienvenidos al sitio institucional",
-    fecha: "14 de junio de 2026",
-    descripcion: "Este espacio reunirá comunicados, actividades y novedades del Liceo Nº3 de Rivera.",
-    imagen: "",
+    id: "presentacion-pagina-web",
+    titulo: "Presentación oficial de la página web del liceo",
+    fecha: "Fecha a definir",
+    descripcion: "Próximamente realizaremos la presentación oficial del nuevo sitio web institucional del Liceo N.° 3.",
+    imagen: "img/comunicados/portada-web.png",
     contenido: [
-      "Este espacio reunirá comunicados, actividades y novedades del Liceo Nº3 de Rivera.",
-      "La intención es contar con un lugar claro y accesible para compartir información con estudiantes, familias, docentes y comunidad educativa."
+      "Invitamos a la comunidad educativa a la presentación oficial de la página web del Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”.",
+      "El nuevo sitio será un espacio de información y encuentro donde se compartirán comunicados, proyectos, recursos, actividades y novedades institucionales.",
+      "La fecha y los detalles de la presentación se comunicarán próximamente."
     ]
   },
   {
-    id: "calendario-actividades",
-    titulo: "Calendario de actividades",
-    fecha: "14 de junio de 2026",
-    descripcion: "Próximamente se publicarán fechas importantes, jornadas y propuestas del año lectivo.",
-    imagen: "",
+    id: "presentacion-bandera-liceo",
+    titulo: "Acto y presentación oficial de la bandera del Liceo N.° 3",
+    fecha: "Fecha a definir",
+    descripcion: "La comunidad educativa será convocada al acto de presentación oficial de la bandera de nuestra institución.",
+    imagen: "img/comunicados/portada-bandera.png",
     contenido: [
-      "En este comunicado se podrán publicar fechas importantes, jornadas institucionales, actividades especiales y propuestas del año lectivo.",
-      "Cuando el comunicado tenga más información, se puede ampliar este texto desde el archivo app.js."
-    ]
-  },
-  {
-    id: "informacion-familias",
-    titulo: "Información para familias",
-    fecha: "14 de junio de 2026",
-    descripcion: "Canal de referencia para compartir avisos, recursos y documentos institucionales.",
-    imagen: "",
-    contenido: [
-      "Este canal funcionará como referencia para compartir avisos, recursos y documentos institucionales dirigidos a las familias.",
-      "También puede utilizarse para comunicar reuniones, inscripciones, entregas de boletines u otras novedades relevantes."
+      "El Liceo N.° 3 realizará un acto especial para presentar oficialmente la bandera de nuestra institución.",
+      "Será una instancia significativa para compartir y celebrar este nuevo símbolo de identidad junto a estudiantes, familias, docentes y demás integrantes de la comunidad educativa.",
+      "La fecha, el horario y los detalles del acto se comunicarán próximamente."
     ]
   }
 ];
 
 const proyectos = [
   {
-    id: "robotica-educativa",
-    titulo: "Robótica educativa",
-    descripcion: "Espacio para desarrollar pensamiento lógico, creatividad y resolución de problemas.",
-    imagen: "linear-gradient(135deg, #061a40, #1459b8)",
+    id: "proyecto-comedor",
+    titulo: "Proyecto comedor",
+    descripcion: "Desde 2026, las nuevas Aulas Comedor ampl&iacute;an el servicio de alimentaci&oacute;n en Educaci&oacute;n Media y ofrecen un espacio de encuentro, convivencia y acompa&ntilde;amiento que tambi&eacute;n contribuye a extender el tiempo educativo.",
+    imagen: "linear-gradient(135deg, #0b2b66, #1459b8)",
+    portada: "img/proyectos/comedor/aula-comedor-exterior.png",
+    imagenDetalle: "img/proyectos/comedor/aula-comedor-interior.png",
     publicaciones: [
       {
-        titulo: "Primeras experiencias",
-        fecha: "14 de junio de 2026",
-        descripcion: "Espacio para compartir una actividad del proyecto, como se publicaría en Instagram.",
-        tipo: "placeholder",
-        recurso: ""
+        titulo: "Aulas Comedor: una nueva propuesta para Educaci&oacute;n Media",
+        fecha: "2026",
+        descripcion: "La iniciativa de ANEP busca garantizar el derecho a la alimentaci&oacute;n, mejorar las condiciones para aprender y transformar el momento del almuerzo en una instancia cotidiana de encuentro, intercambio y convivencia.",
+        tipo: "youtube-destacado",
+        recurso: "https://www.youtube.com/embed/S3309TGyxBk?start=14"
+      },
+      {
+        titulo: "El Aula Comedor del Liceo N.&deg; 3",
+        fecha: "2026",
+        descripcion: "El nuevo espacio cuenta con mobiliario y equipamiento para brindar el servicio de alimentaci&oacute;n en un ambiente cuidado, luminoso y preparado para compartir. Su incorporaci&oacute;n fortalece el bienestar y el acompa&ntilde;amiento de los estudiantes durante la jornada liceal.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/comedor/aula-comedor-exterior.png",
+          "img/proyectos/comedor/aula-comedor-interior.png",
+          "img/proyectos/comedor/almuerzo.png"
+        ]
+      }
+    ]
+  },
+  {
+    id: "proyecto-estrellas-2026",
+    titulo: "Proyecto Estrellas 2026",
+    descripcion: "Proyecto institucional que se realiza desde hace varios a&ntilde;os: los estudiantes de cada grupo pertenecen a una estrella de un color determinado y suman puntos durante todo el a&ntilde;o por realizar buenas acciones en el liceo.",
+    imagen: "linear-gradient(135deg, #f4c542, #1459b8)",
+    portada: "img/proyectos/estrellas-2026/portada.png",
+    claseImagen: "imagen-rotada",
+    imagenDetalle: "img/proyectos/estrellas-2026/vespertino/03-equipo-verde.png",
+    claseImagenDetalle: "",
+    publicaciones: [
+      {
+        titulo: "Apertura del Proyecto Estrellas 2026 · Turno vespertino",
+        fecha: "26 de junio de 2026",
+        descripcion: "La comunidad del turno vespertino dio comienzo a una nueva edición del Proyecto Estrellas con entusiasmo, creatividad, identidad grupal y espíritu de compañerismo.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/reel/Daq_Hz7PzeA/"
+      },
+      {
+        titulo: "Equipos del turno vespertino",
+        fecha: "26 de junio de 2026",
+        descripcion: "Una selección de imágenes de la jornada de apertura, con los equipos representando sus colores y compartiendo las primeras actividades del proyecto.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/estrellas-2026/vespertino/01-equipo-naranja.png",
+          "img/proyectos/estrellas-2026/vespertino/02-equipo-violeta.png",
+          "img/proyectos/estrellas-2026/vespertino/03-equipo-verde.png",
+          "img/proyectos/estrellas-2026/vespertino/04-equipo-celeste.png",
+          "img/proyectos/estrellas-2026/vespertino/05-equipo-celeste-exterior.png"
+        ],
+        recursosRotados: [1],
+        enlaceInstagram: "https://www.instagram.com/reel/Daq_Hz7PzeA/"
+      },
+      {
+        titulo: "Apertura del Proyecto Estrellas 2026 · Turno matutino",
+        fecha: "25 de junio de 2026",
+        descripcion: "El turno matutino comenzó a escribir una nueva historia de desafíos, valores, compañerismo y sentido de pertenencia.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/reel/DaB4LJlpila/"
+      },
+      {
+        titulo: "Jornada de apertura · Turno matutino",
+        fecha: "25 de junio de 2026",
+        descripcion: "La apertura promovió la participación, el respeto, la solidaridad, el compromiso, la creatividad y el esfuerzo de los diferentes grupos.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/p/DaBtopwlNzq/"
+      }
+    ]
+  },
+  {
+    id: "robotica-educativa",
+    titulo: "Rob&oacute;tica educativa",
+    descripcion: "CyberTeam L3 participa en la Olimp&iacute;ada de Rob&oacute;tica, Programaci&oacute;n y Videojuegos de Ceibal.",
+    imagen: "url('img/robotica/portada.webp')",
+    portada: "img/robotica/portada.webp",
+    publicaciones: [
+      {
+        titulo: "CyberTeam L3 vuelve a decir presente",
+        fecha: "2026",
+        descripcion: "Por tercer a&ntilde;o consecutivo, el equipo CyberTeam L3 participa en la Olimp&iacute;ada de Rob&oacute;tica, Programaci&oacute;n y Videojuegos de Ceibal. En esta edici&oacute;n 13: Territorios Vivos, nuestros estudiantes contin&uacute;an demostrando creatividad, trabajo en equipo e innovaci&oacute;n tecnol&oacute;gica, representando con orgullo al Liceo N.&deg; 3 de Rivera. Integrantes del equipo: Alison Acevedo, Luanna Da Cunha y Julio C&eacute;sar Tajes. El equipo est&aacute; integrado por estudiantes del Liceo N.&deg; 3 y del Liceo N.&deg; 8, fortaleciendo el trabajo colaborativo entre instituciones. Felicitaciones tambi&eacute;n al Prof. Pablo Macedo por acompa&ntilde;ar este proceso.",
+        tipo: "galeria",
+        recursos: [
+          "img/robotica/portada.webp",
+          "img/robotica/cyberteam-1.webp",
+          "img/robotica/cyberteam-2.webp",
+          "img/robotica/cyberteam-3.webp",
+          "img/robotica/cyberteam-4.webp"
+        ]
       }
     ]
   },
@@ -58,11 +132,12 @@ const proyectos = [
     imagen: "linear-gradient(135deg, #0b2b66, #44b3e6)",
     publicaciones: [
       {
-        titulo: "Lecturas y encuentros",
-        fecha: "14 de junio de 2026",
-        descripcion: "Publicación de ejemplo para mostrar imágenes, afiches o videos relacionados con biblioteca.",
-        tipo: "placeholder",
-        recurso: ""
+        titulo: "Actividad de Biblioteca",
+        fecha: "2026",
+        descripcion: "Hoy, 25 de mayo, participamos de Rivera Lee, una hermosa jornada realizada en Plaza Flores y organizada por la Intendencia Departamental de Rivera.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/p/DYxzp7kFLTF/",
+        cuenta: "liceo_3rivera"
       }
     ]
   },
@@ -74,13 +149,6 @@ const proyectos = [
     publicaciones: []
   },
   {
-    id: "arte-comunicacion-visual",
-    titulo: "Arte y comunicación visual",
-    descripcion: "Propuestas expresivas para compartir producciones, identidad y creatividad.",
-    imagen: "linear-gradient(135deg, #0b2b66, #f4c542)",
-    publicaciones: []
-  },
-  {
     id: "deportes",
     titulo: "Deportes",
     descripcion: "Actividad física, convivencia, participación y trabajo en equipo.",
@@ -88,18 +156,28 @@ const proyectos = [
     publicaciones: []
   },
   {
-    id: "talleres-optativos",
-    titulo: "Talleres optativos",
-    descripcion: "Espacios flexibles para ampliar intereses y fortalecer habilidades.",
+    id: "trabajos-interdisciplinarios",
+    titulo: "Trabajos interdisciplinarios",
+    descripcion: "Propuestas que integran distintas asignaturas para aprender, investigar y crear en conjunto.",
     imagen: "linear-gradient(135deg, #1459b8, #f4c542)",
     publicaciones: []
+  }
+];
+
+const publicacionesApal = [
+  {
+    titulo: "Espacio APAL",
+    fecha: "2026",
+    descripcion: "Este muro reunirá publicaciones sobre beneficios, apoyos, mejoras y actividades realizadas por APAL para la comunidad educativa.",
+    tipo: "placeholder",
+    recurso: ""
   },
   {
-    id: "proyecto-comedor",
-    titulo: "Proyecto comedor",
-    descripcion: "Acompañamiento, cuidado y apoyo a la comunidad educativa.",
-    imagen: "linear-gradient(135deg, #0b2b66, #1459b8)",
-    publicaciones: []
+    titulo: "Colaboración con el centro educativo",
+    fecha: "2026",
+    descripcion: "APAL acompaña iniciativas vinculadas a la gestión del liceo, actividades culturales, mejoras edilicias y apoyo a los estudiantes.",
+    tipo: "placeholder",
+    recurso: ""
   }
 ];
 
@@ -241,10 +319,13 @@ function crearComunicados() {
   const limite = Number(contenedor.dataset.limite) || comunicados.length;
   contenedor.innerHTML = comunicados.slice(0, limite).map((comunicado) => `
     <article class="tarjeta-comunicado revelar">
+      ${comunicado.imagen ? `<img class="imagen-comunicado-card" src="${comunicado.imagen}" alt="${comunicado.titulo}">` : ""}
+      <div class="contenido-comunicado-card">
       <span class="fecha">${comunicado.fecha}</span>
       <h3>${comunicado.titulo}</h3>
       <p>${comunicado.descripcion}</p>
       <a class="enlace-tarjeta" href="comunicado.html?id=${comunicado.id}">Leer más</a>
+      </div>
     </article>
   `).join("");
 }
@@ -270,6 +351,17 @@ function crearDetalleComunicado() {
   }
 
   document.title = `${comunicado.titulo} | Liceo N.° 3`;
+
+  const tituloEncabezado = document.querySelector("#tituloEncabezadoComunicado");
+  if (tituloEncabezado) {
+    tituloEncabezado.textContent = comunicado.titulo;
+  }
+
+  const imagenEncabezado = document.querySelector("#imagenEncabezadoComunicado");
+  if (imagenEncabezado && comunicado.imagen) {
+    imagenEncabezado.innerHTML = `<img src="${comunicado.imagen}" alt="${comunicado.titulo}">`;
+    imagenEncabezado.classList.add("foto-con-imagen");
+  }
 
   const imagen = comunicado.imagen
     ? `<img src="${comunicado.imagen}" alt="${comunicado.titulo}">`
@@ -298,9 +390,9 @@ function crearProyectos() {
   const limite = Number(contenedor.dataset.limite) || proyectos.length;
   contenedor.innerHTML = proyectos.slice(0, limite).map((proyecto) => `
     <article class="tarjeta-proyecto revelar">
-      <div class="imagen-proyecto" style="--imagen-proyecto: ${proyecto.imagen};">
-        Imagen del proyecto
-      </div>
+      ${proyecto.portada
+        ? `<img class="imagen-proyecto-card ${proyecto.claseImagen || ""}" src="${proyecto.portada}" alt="${proyecto.titulo}">`
+        : `<div class="imagen-proyecto" style="--imagen-proyecto: ${proyecto.imagen};">Imagen del proyecto</div>`}
       <div class="contenido-proyecto">
         <h3>${proyecto.titulo}</h3>
         <p>${proyecto.descripcion}</p>
@@ -332,8 +424,28 @@ function crearDetalleProyecto() {
 
   document.title = `${proyecto.titulo} | Liceo N.° 3`;
 
-  const publicaciones = proyecto.publicaciones.length
-    ? proyecto.publicaciones.map(crearPublicacionProyecto).join("")
+  const imagenDestacada = document.querySelector("#imagenDestacadaProyecto");
+  if (imagenDestacada) {
+    if (proyecto.portada) {
+      imagenDestacada.innerHTML = `<img class="${proyecto.claseImagen || ""}" src="${proyecto.portada}" alt="${proyecto.titulo}"><span>${proyecto.titulo}</span>`;
+      imagenDestacada.classList.add("con-imagen-destacada");
+    } else {
+      imagenDestacada.style.setProperty("--imagen-proyecto", proyecto.imagen);
+      imagenDestacada.innerHTML = `<span>${proyecto.titulo}</span>`;
+      imagenDestacada.classList.add("con-imagen-proyecto");
+    }
+  }
+
+  const publicacionesDestacadas = proyecto.publicaciones
+    .filter((publicacion) => publicacion.tipo === "youtube-destacado")
+    .map(crearPublicacionProyecto)
+    .join("");
+
+  const actividades = proyecto.publicaciones
+    .filter((publicacion) => publicacion.tipo !== "youtube-destacado");
+
+  const publicaciones = actividades.length
+    ? actividades.map(crearPublicacionProyecto).join("")
     : `<article class="publicacion-proyecto revelar">
         <div class="foto-placeholder medio-publicacion">
           <span>Espacio para primera publicación</span>
@@ -354,11 +466,15 @@ function crearDetalleProyecto() {
           <p>${proyecto.descripcion}</p>
           <a class="boton boton-azul" href="proyectos.html">Volver a proyectos</a>
         </div>
-        <div class="imagen-proyecto imagen-proyecto-detalle" style="--imagen-proyecto: ${proyecto.imagen};">
-          Imagen principal del proyecto
-        </div>
+        ${proyecto.imagenDetalle || proyecto.portada
+          ? `<img class="imagen-proyecto-detalle-img ${proyecto.claseImagenDetalle ?? proyecto.claseImagen ?? ""}" src="${proyecto.imagenDetalle || proyecto.portada}" alt="${proyecto.titulo}">`
+          : `<div class="imagen-proyecto imagen-proyecto-detalle" style="--imagen-proyecto: ${proyecto.imagen};">Imagen principal del proyecto</div>`}
       </div>
     </article>
+
+    ${publicacionesDestacadas
+      ? `<div class="muro-publicaciones publicaciones-destacadas">${publicacionesDestacadas}</div>`
+      : ""}
 
     <div class="encabezado-seccion revelar encabezado-publicaciones">
       <p class="etiqueta">Publicaciones</p>
@@ -379,7 +495,25 @@ function crearPublicacionProyecto(publicacion) {
     medio = `<img class="medio-publicacion" src="${publicacion.recurso}" alt="${publicacion.titulo}">`;
   }
 
-  if (publicacion.tipo === "youtube" && publicacion.recurso) {
+
+  if (publicacion.tipo === "galeria" && publicacion.recursos?.length) {
+    medio = `
+      <div class="galeria-publicacion medio-publicacion">
+        ${publicacion.recursos.map((recurso, indice) => `
+          <button
+            class="boton-imagen-galeria"
+            type="button"
+            data-imagen="${recurso}"
+            data-rotada="${publicacion.recursosRotados?.includes(indice) ? "true" : "false"}"
+            data-descripcion="${publicacion.titulo}"
+            aria-label="Ampliar imagen: ${publicacion.titulo}">
+            <img class="${publicacion.recursosRotados?.includes(indice) ? "imagen-rotada" : ""}" src="${recurso}" alt="${publicacion.titulo}">
+          </button>
+        `).join("")}
+      </div>
+    `;
+  }
+  if ((publicacion.tipo === "youtube" || publicacion.tipo === "youtube-destacado") && publicacion.recurso) {
     medio = `
       <div class="video-marco medio-publicacion">
         <iframe
@@ -392,16 +526,67 @@ function crearPublicacionProyecto(publicacion) {
     `;
   }
 
+  if (publicacion.tipo === "instagram" && publicacion.recurso) {
+    medio = `
+      <div class="instagram-publicacion medio-publicacion">
+        <blockquote
+          class="instagram-media"
+          data-instgrm-captioned
+          data-instgrm-permalink="${publicacion.recurso}"
+          data-instgrm-version="14">
+          <a href="${publicacion.recurso}" target="_blank" rel="noopener noreferrer">Ver publicación en Instagram</a>
+        </blockquote>
+      </div>
+    `;
+  }
+
   return `
-    <article class="publicacion-proyecto revelar">
+    <article class="publicacion-proyecto ${publicacion.tipo === "youtube-destacado" ? "publicacion-video-destacado" : ""} revelar">
       ${medio}
       <div>
         <span class="fecha">${publicacion.fecha}</span>
         <h3>${publicacion.titulo}</h3>
         <p>${publicacion.descripcion}</p>
+        ${publicacion.tipo === "instagram" || publicacion.enlaceInstagram ? `<a class="enlace-tarjeta" href="${publicacion.enlaceInstagram || publicacion.recurso}" target="_blank" rel="noopener noreferrer">Abrir en Instagram</a>` : ""}
       </div>
     </article>
   `;
+}
+
+function cargarEmbedsInstagram() {
+  if (!document.querySelector(".instagram-media")) return;
+
+  if (window.instgrm?.Embeds) {
+    window.instgrm.Embeds.process();
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://www.instagram.com/embed.js";
+  document.body.appendChild(script);
+}
+
+function crearPublicacionesApal() {
+  const contenedor = document.querySelector("#contenedorApal");
+  if (!contenedor) return;
+
+  contenedor.innerHTML = publicacionesApal.map((publicacion) => {
+    const medio = publicacion.recurso
+      ? `<img class="apal-publicacion-imagen" src="${publicacion.recurso}" alt="${publicacion.titulo}">`
+      : `<div class="foto-placeholder apal-publicacion-imagen"><span>Espacio para imagen o afiche</span></div>`;
+
+    return `
+      <article class="apal-publicacion revelar">
+        ${medio}
+        <div class="apal-publicacion-contenido">
+          <span class="fecha">${publicacion.fecha}</span>
+          <h3>${publicacion.titulo}</h3>
+          <p>${publicacion.descripcion}</p>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function crearRecursos() {
@@ -504,12 +689,60 @@ function activarAnimacionesScroll() {
   elementos.forEach((elemento) => observador.observe(elemento));
 }
 
+function activarVisorImagenes() {
+  const visor = document.createElement("div");
+  visor.className = "visor-imagen";
+  visor.setAttribute("role", "dialog");
+  visor.setAttribute("aria-modal", "true");
+  visor.setAttribute("aria-label", "Imagen ampliada");
+  visor.hidden = true;
+  visor.innerHTML = `
+    <button class="cerrar-visor" type="button" aria-label="Cerrar imagen ampliada">&times;</button>
+    <img class="imagen-visor" src="" alt="">
+  `;
+  document.body.appendChild(visor);
+
+  const imagenVisor = visor.querySelector(".imagen-visor");
+  const botonCerrar = visor.querySelector(".cerrar-visor");
+
+  const cerrarVisor = () => {
+    visor.hidden = true;
+    document.body.classList.remove("visor-abierto");
+    imagenVisor.src = "";
+    imagenVisor.classList.remove("imagen-rotada");
+  };
+
+  document.addEventListener("click", (evento) => {
+    const botonImagen = evento.target.closest(".boton-imagen-galeria");
+    if (botonImagen) {
+      imagenVisor.src = botonImagen.dataset.imagen;
+      imagenVisor.alt = botonImagen.dataset.descripcion;
+      imagenVisor.classList.toggle("imagen-rotada", botonImagen.dataset.rotada === "true");
+      visor.hidden = false;
+      document.body.classList.add("visor-abierto");
+      botonCerrar.focus();
+      return;
+    }
+
+    if (evento.target === visor || evento.target === botonCerrar) {
+      cerrarVisor();
+    }
+  });
+
+  document.addEventListener("keydown", (evento) => {
+    if (evento.key === "Escape" && !visor.hidden) cerrarVisor();
+  });
+}
+
 crearComunicados();
 crearDetalleComunicado();
 crearProyectos();
 crearDetalleProyecto();
+crearPublicacionesApal();
 crearRecursos();
 crearDetalleRecurso();
 crearGaleria();
 crearVideos();
+cargarEmbedsInstagram();
 activarAnimacionesScroll();
+activarVisorImagenes();
