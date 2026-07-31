@@ -128,16 +128,153 @@ const proyectos = [
   {
     id: "biblioteca",
     titulo: "Biblioteca",
-    descripcion: "Lectura, investigación, acompañamiento y acceso a materiales de estudio.",
+    descripcion: "Un espacio de lectura, investigación, encuentro y propuestas que fortalecen el pensamiento, la creatividad y la convivencia.",
     imagen: "linear-gradient(135deg, #0b2b66, #44b3e6)",
+    portada: "img/proyectos/biblioteca/ajedrez-03.jpg",
+    imagenDetalle: "img/proyectos/biblioteca/ajedrez-03.jpg",
     publicaciones: [
       {
-        titulo: "Actividad de Biblioteca",
-        fecha: "2026",
-        descripcion: "Hoy, 25 de mayo, participamos de Rivera Lee, una hermosa jornada realizada en Plaza Flores y organizada por la Intendencia Departamental de Rivera.",
+        titulo: "Estudiantes del Liceo N.º 3 en una jornada de ajedrez",
+        fecha: "30 de julio de 2026",
+        descripcion: "Nuestros estudiantes participaron en la jornada organizada por el Liceo N.º 7, compartiendo una experiencia que promueve el pensamiento estratégico, el respeto, la concentración y el juego limpio.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/biblioteca/ajedrez-01.jpg",
+          "img/proyectos/biblioteca/ajedrez-02.jpg",
+          "img/proyectos/biblioteca/ajedrez-03.jpg",
+          "img/proyectos/biblioteca/ajedrez-04.jpg",
+          "img/proyectos/biblioteca/ajedrez-05.jpg",
+          "img/proyectos/biblioteca/ajedrez-06.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/Dbbmw8SlLlj/"
+      },
+      {
+        titulo: "Taller de ajedrez en la Biblioteca",
+        fecha: "9 de julio de 2026",
+        descripcion: "La Biblioteca abrió un nuevo espacio para aprender y disfrutar del ajedrez. La propuesta favorece el razonamiento, la toma de decisiones y el encuentro entre estudiantes.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/biblioteca/taller-01.jpg",
+          "img/proyectos/biblioteca/taller-02.jpg",
+          "img/proyectos/biblioteca/taller-03.jpg",
+          "img/proyectos/biblioteca/taller-04.jpg",
+          "img/proyectos/biblioteca/taller-05.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/Dal7uWzlDWT/"
+      },
+      {
+        titulo: "Rivera Lee: lectura y encuentro en Plaza Flores",
+        fecha: "25 de mayo de 2026",
+        descripcion: "La comunidad del liceo participó de Rivera Lee, una jornada organizada por la Intendencia Departamental de Rivera para compartir lecturas y acercar los libros a toda la ciudad.",
         tipo: "instagram",
-        recurso: "https://www.instagram.com/p/DYxzp7kFLTF/",
-        cuenta: "liceo_3rivera"
+        recurso: "https://www.instagram.com/p/DYxzp7kFLTF/"
+      }
+    ]
+  },
+  {
+    id: "deportes",
+    titulo: "Deportes",
+    descripcion: "Actividad física, convivencia, participación y trabajo en equipo dentro y fuera del liceo.",
+    imagen: "linear-gradient(135deg, #061a40, #44b3e6)",
+    portada: "img/proyectos/deportes/futsal-04.jpg",
+    imagenDetalle: "img/proyectos/deportes/futsal-04.jpg",
+    publicaciones: [
+      {
+        titulo: "Juegos Deportivos Nacionales · Futsal masculino",
+        fecha: "11 de junio de 2026",
+        descripcion: "Estudiantes del liceo participaron en la instancia de futsal masculino de los Juegos Deportivos Nacionales, representando a la institución con compromiso, compañerismo y espíritu deportivo.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/deportes/futsal-01.jpg",
+          "img/proyectos/deportes/futsal-02.jpg",
+          "img/proyectos/deportes/futsal-03.jpg",
+          "img/proyectos/deportes/futsal-04.jpg",
+          "img/proyectos/deportes/futsal-05.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DZd3h03lGED/"
+      }
+    ]
+  },
+  {
+    id: "trabajos-interdisciplinarios",
+    titulo: "Trabajos interdisciplinarios",
+    descripcion: "Propuestas que conectan distintas asignaturas para investigar, crear y compartir aprendizajes con sentido.",
+    imagen: "linear-gradient(135deg, #1459b8, #f4c542)",
+    portada: "img/proyectos/interdisciplinarios/comedor-06.jpg",
+    imagenDetalle: "img/proyectos/interdisciplinarios/comedor-06.jpg",
+    publicaciones: [
+      {
+        titulo: "Conociendo nuestro comedor · Presentación de trabajos",
+        fecha: "30 de julio de 2026",
+        descripcion: "Los estudiantes investigaron distintos aspectos del comedor liceal y compartieron sus hallazgos en una jornada de presentaciones, integrando saberes, comunicación oral y trabajo colaborativo.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/interdisciplinarios/comedor-01.jpg",
+          "img/proyectos/interdisciplinarios/comedor-02.jpg",
+          "img/proyectos/interdisciplinarios/comedor-03.jpg",
+          "img/proyectos/interdisciplinarios/comedor-04.jpg",
+          "img/proyectos/interdisciplinarios/comedor-05.jpg",
+          "img/proyectos/interdisciplinarios/comedor-06.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/Dbb_gIxFIr7/"
+      },
+      {
+        titulo: "Entre estadios y cocinas · Clases abiertas",
+        fecha: "28 de julio de 2026",
+        descripcion: "Los grupos de 7.º compartieron con sus familias una propuesta de Geografía —integrada también con Inglés— que recorrió culturas, territorios, estadios y cocinas del mundo.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/interdisciplinarios/estadios-01.jpg",
+          "img/proyectos/interdisciplinarios/estadios-02.jpg",
+          "img/proyectos/interdisciplinarios/estadios-03.jpg",
+          "img/proyectos/interdisciplinarios/estadios-04.jpg",
+          "img/proyectos/interdisciplinarios/estadios-05.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DbWLIMjFNv0/"
+      },
+      {
+        titulo: "Pastel para enemigos · Convivencia y reflexión",
+        fecha: "23 de julio de 2026",
+        descripcion: "A partir de una lectura, estudiantes de 8.º reflexionaron sobre empatía, respeto y compañerismo. El cierre reunió Comunicación Visual, Biología y acompañamiento pedagógico en una experiencia creativa y compartida.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/interdisciplinarios/pastel-01.jpg",
+          "img/proyectos/interdisciplinarios/pastel-02.jpg",
+          "img/proyectos/interdisciplinarios/pastel-03.jpg",
+          "img/proyectos/interdisciplinarios/pastel-04.jpg",
+          "img/proyectos/interdisciplinarios/pastel-05.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DbJ8zCElKli/"
+      },
+      {
+        titulo: "Ciudadanía digital y ciberconvivencia",
+        fecha: "16 de julio de 2026",
+        descripcion: "Una propuesta de reflexión y prevención sobre convivencia en entornos digitales, sexting y grooming. Los estudiantes analizaron situaciones cotidianas y construyeron herramientas para participar en internet de manera responsable, segura y respetuosa.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/interdisciplinarios/ciudadania-01.jpg",
+          "img/proyectos/interdisciplinarios/ciudadania-02.jpg",
+          "img/proyectos/interdisciplinarios/ciudadania-03.jpg",
+          "img/proyectos/interdisciplinarios/ciudadania-04.jpg",
+          "img/proyectos/interdisciplinarios/ciudadania-05.jpg",
+          "img/proyectos/interdisciplinarios/ciudadania-06.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/Da3vWW3lHhL/"
+      },
+      {
+        titulo: "Promotores de salud",
+        fecha: "10 de julio de 2026",
+        descripcion: "Estudiantes participaron en una propuesta de promoción de la salud y prevención, articulada con la Junta Nacional de Drogas. El trabajo favoreció el intercambio de información, el pensamiento crítico y la construcción de decisiones saludables.",
+        tipo: "galeria",
+        recursos: [
+          "img/proyectos/interdisciplinarios/salud-01.jpg",
+          "img/proyectos/interdisciplinarios/salud-02.jpg",
+          "img/proyectos/interdisciplinarios/salud-03.jpg",
+          "img/proyectos/interdisciplinarios/salud-04.jpg",
+          "img/proyectos/interdisciplinarios/salud-05.jpg",
+          "img/proyectos/interdisciplinarios/salud-06.jpg"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DaorBeClccS/"
       }
     ]
   },
@@ -147,37 +284,42 @@ const proyectos = [
     descripcion: "Experiencias prácticas para aprender ciencia desde la observación y la exploración.",
     imagen: "linear-gradient(135deg, #1459b8, #061a40)",
     publicaciones: []
-  },
-  {
-    id: "deportes",
-    titulo: "Deportes",
-    descripcion: "Actividad física, convivencia, participación y trabajo en equipo.",
-    imagen: "linear-gradient(135deg, #061a40, #44b3e6)",
-    publicaciones: []
-  },
-  {
-    id: "trabajos-interdisciplinarios",
-    titulo: "Trabajos interdisciplinarios",
-    descripcion: "Propuestas que integran distintas asignaturas para aprender, investigar y crear en conjunto.",
-    imagen: "linear-gradient(135deg, #1459b8, #f4c542)",
-    publicaciones: []
   }
 ];
 
 const publicacionesApal = [
   {
-    titulo: "Espacio APAL",
-    fecha: "2026",
-    descripcion: "Este muro reunirá publicaciones sobre beneficios, apoyos, mejoras y actividades realizadas por APAL para la comunidad educativa.",
-    tipo: "placeholder",
-    recurso: ""
+    titulo: "Bono Colaboración: agradecimiento a la comunidad",
+    fecha: "10 de julio de 2026",
+    descripcion: "APAL agradece a estudiantes, familias y colaboradores que hicieron posible esta iniciativa. Cada aporte contribuye al crecimiento de nuestra comunidad educativa.",
+    tipo: "galeria",
+    recursos: [
+      "img/apal/bono-colaboracion-julio-1.jpg",
+      "img/apal/bono-colaboracion-julio-2.jpg"
+    ],
+    enlaceInstagram: "https://www.instagram.com/p/Daoo7jtlYVH/"
   },
   {
-    titulo: "Colaboración con el centro educativo",
+    titulo: "Sorteo y entrega del Bono Colaboración",
+    fecha: "23 de junio de 2026",
+    descripcion: "Compartimos el sorteo y la entrega del premio del Bono Colaboración, una propuesta impulsada con el compromiso de APAL y el apoyo de las familias y estudiantes.",
+    tipo: "galeria",
+    recursos: [
+      "img/apal/bono-colaboracion-junio-1.jpg",
+      "img/apal/bono-colaboracion-junio-2.jpg"
+    ],
+    enlaceInstagram: "https://www.instagram.com/p/DZ7wooelV39/"
+  },
+  {
+    titulo: "Beneficio y acción de APAL",
     fecha: "2026",
-    descripcion: "APAL acompaña iniciativas vinculadas a la gestión del liceo, actividades culturales, mejoras edilicias y apoyo a los estudiantes.",
-    tipo: "placeholder",
-    recurso: ""
+    descripcion: "Publicación de APAL con información para estudiantes, familias y la comunidad educativa del Liceo N.º 3.",
+    tipo: "galeria",
+    recursos: [
+      "img/apal/beneficio-apal-1.webp",
+      "img/apal/beneficio-apal-2.webp"
+    ],
+    enlaceInstagram: "https://www.instagram.com/p/DY5jpSPlPJ9/"
   }
 ];
 
@@ -572,7 +714,30 @@ function crearPublicacionesApal() {
   if (!contenedor) return;
 
   contenedor.innerHTML = publicacionesApal.map((publicacion) => {
-    const medio = publicacion.recurso
+    const medio = publicacion.tipo === "galeria" && publicacion.recursos?.length
+      ? `<div class="apal-galeria">
+          ${publicacion.recursos.map((recurso, indice) => `
+            <button
+              class="boton-imagen-galeria"
+              type="button"
+              data-imagen="${recurso}"
+              data-descripcion="${publicacion.titulo} — imagen ${indice + 1}"
+              aria-label="Ampliar imagen ${indice + 1}: ${publicacion.titulo}">
+              <img src="${recurso}" alt="${publicacion.titulo} — imagen ${indice + 1}">
+            </button>
+          `).join("")}
+        </div>`
+      : publicacion.tipo === "instagram" && publicacion.recurso
+      ? `<div class="instagram-publicacion apal-publicacion-imagen">
+          <blockquote
+            class="instagram-media"
+            data-instgrm-captioned
+            data-instgrm-permalink="${publicacion.recurso}"
+            data-instgrm-version="14">
+            <a href="${publicacion.recurso}" target="_blank" rel="noopener noreferrer">Ver publicación en Instagram</a>
+          </blockquote>
+        </div>`
+      : publicacion.recurso
       ? `<img class="apal-publicacion-imagen" src="${publicacion.recurso}" alt="${publicacion.titulo}">`
       : `<div class="foto-placeholder apal-publicacion-imagen"><span>Espacio para imagen o afiche</span></div>`;
 
@@ -583,6 +748,7 @@ function crearPublicacionesApal() {
           <span class="fecha">${publicacion.fecha}</span>
           <h3>${publicacion.titulo}</h3>
           <p>${publicacion.descripcion}</p>
+          ${publicacion.enlaceInstagram || publicacion.tipo === "instagram" ? `<a class="enlace-tarjeta" href="${publicacion.enlaceInstagram || publicacion.recurso}" target="_blank" rel="noopener noreferrer">Ver publicación original en Instagram</a>` : ""}
         </div>
       </article>
     `;
