@@ -14,14 +14,19 @@ const comunicados = [
   },
   {
     id: "presentacion-bandera-liceo",
-    titulo: "Acto y presentación oficial de la bandera del Liceo N.° 3",
-    fecha: "Fecha a definir",
-    descripcion: "La comunidad educativa será convocada al acto de presentación oficial de la bandera de nuestra institución.",
-    imagen: "img/comunicados/portada-bandera.png",
+    titulo: "El Liceo N.° 3 ya tiene su bandera oficial",
+    fecha: "Acto oficial: fecha a confirmar",
+    descripcion: "Ya conocemos el diseño ganador y las propuestas que obtuvieron el segundo y tercer lugar. Próximamente presentaremos oficialmente nuestra bandera.",
+    imagen: "img/comunicados/bandera-primer-lugar.png",
     contenido: [
-      "El Liceo N.° 3 realizará un acto especial para presentar oficialmente la bandera de nuestra institución.",
-      "Será una instancia significativa para compartir y celebrar este nuevo símbolo de identidad junto a estudiantes, familias, docentes y demás integrantes de la comunidad educativa.",
-      "La fecha, el horario y los detalles del acto se comunicarán próximamente."
+      "Luego de la instancia de selección, el Liceo N.° 3 ya cuenta con el diseño que representará oficialmente a nuestra institución.",
+      "Felicitamos a quienes participaron y agradecemos la creatividad, el compromiso y el sentido de pertenencia reflejados en cada propuesta. A continuación, presentamos los diseños que obtuvieron el primer, segundo y tercer lugar.",
+      "A la brevedad realizaremos un acto para presentar oficialmente la bandera del liceo ante toda la comunidad educativa. La fecha, el horario y los demás detalles serán comunicados próximamente."
+    ],
+    resultados: [
+      { puesto: "Primer lugar · Diseño ganador", imagen: "img/comunicados/bandera-primer-lugar.png", destacado: true },
+      { puesto: "Segundo lugar", imagen: "img/comunicados/bandera-segundo-lugar.png" },
+      { puesto: "Tercer lugar", imagen: "img/comunicados/bandera-tercer-lugar.png" }
     ]
   }
 ];
@@ -325,102 +330,166 @@ const publicacionesApal = [
 
 const recursos = [
   {
-    id: "materiales-estudio",
-    titulo: "Materiales de estudio",
-    descripcion: "Guías, fichas y recursos para las distintas asignaturas.",
-    textoBoton: "Abrir materiales",
-    contenido: [
-      "Espacio para organizar materiales de estudio por asignatura, nivel o grupo.",
-      "Más adelante se pueden agregar enlaces a carpetas, documentos PDF, guías de trabajo o recursos digitales."
-    ],
-    enlaces: [
-      { texto: "Agregar enlace a carpeta de materiales", url: "#" }
-    ]
+    titulo: "CREA",
+    descripcion: "Aulas virtuales, tareas, materiales, mensajes y seguimiento de los cursos del liceo.",
+    publico: "Estudiantes · Familias · Docentes",
+    logo: "img/recursos/logo-crea-oficial.png",
+    url: "https://ceibal.edu.uy/plataformas-y-programas/crea/",
+    textoBoton: "Conocer e ingresar a CREA"
   },
   {
-    id: "formularios",
-    titulo: "Formularios",
-    descripcion: "Espacio para inscripciones, solicitudes y trámites.",
-    textoBoton: "Abrir formularios",
-    contenido: [
-      "Espacio para centralizar formularios de inscripción, solicitudes, autorizaciones u otros trámites.",
-      "Cuando exista un formulario real, se puede colocar aquí el enlace correspondiente."
-    ],
-    enlaces: [
-      { texto: "Agregar formulario", url: "#" }
-    ]
+    titulo: "Portal de Estudiantes Ceibal",
+    descripcion: "Acceso central a las plataformas Ceibal, libros de texto, videos y recursos para aprender.",
+    publico: "Estudiantes · Familias",
+    logo: "img/recursos/logo-ceibal-oficial.png",
+    url: "https://estudiantes.ceibal.edu.uy/",
+    textoBoton: "Abrir portal"
   },
   {
-    id: "documentos-institucionales",
-    titulo: "Documentos institucionales",
-    descripcion: "Reglamentos, comunicados oficiales y orientaciones.",
-    textoBoton: "Ver documentos",
-    contenido: [
-      "Espacio para documentos institucionales, reglamentos, orientaciones y materiales de consulta.",
-      "Puede incluir archivos descargables o enlaces a documentos compartidos."
-    ],
-    enlaces: [
-      { texto: "Agregar documento", url: "#" }
-    ]
+    titulo: "Biblioteca País",
+    descripcion: "Libros, audiolibros y materiales digitales disponibles para lectura, estudio y préstamo.",
+    publico: "Estudiantes · Familias · Docentes",
+    logo: "img/recursos/logo-biblioteca-pais.png",
+    url: "https://bibliotecapais.ceibal.edu.uy/",
+    textoBoton: "Ir a la biblioteca"
   },
   {
-    id: "calendario",
-    titulo: "Calendario",
-    descripcion: "Fechas importantes, actividades y evaluaciones.",
-    textoBoton: "Ver calendario",
-    contenido: [
-      "Espacio para publicar fechas importantes, actividades, evaluaciones y jornadas institucionales.",
-      "Puede conectarse a un calendario externo o mantenerse como listado de fechas."
-    ],
-    enlaces: [
-      { texto: "Agregar calendario", url: "#" }
-    ]
+    titulo: "Uruguay Educa",
+    descripcion: "Recursos educativos, propuestas didácticas, juegos, materiales multimedia y contenidos de ANEP.",
+    publico: "Estudiantes · Familias · Docentes",
+    logo: "img/recursos/logo-uruguay-educa.png",
+    url: "https://uruguayeduca.anep.edu.uy/",
+    textoBoton: "Explorar recursos"
   },
   {
-    id: "enlaces-utiles",
-    titulo: "Enlaces útiles",
-    descripcion: "Accesos a plataformas y sitios educativos.",
-    textoBoton: "Abrir enlaces",
-    contenido: [
-      "Espacio para reunir accesos a plataformas educativas, sitios oficiales y herramientas digitales.",
-      "Se pueden agregar varios enlaces en forma de botones."
-    ],
-    enlaces: [
-      { texto: "Agregar enlace útil", url: "#" }
-    ]
+    titulo: "REA Ceibal",
+    descripcion: "Actividades y recursos educativos abiertos para estudiar, practicar o enriquecer las clases.",
+    publico: "Estudiantes · Docentes",
+    logo: "img/recursos/logo-rea-ceibal.png",
+    url: "https://rea.ceibal.edu.uy/",
+    textoBoton: "Buscar actividades"
   },
   {
-    id: "estudiantes-familias",
-    titulo: "Estudiantes y familias",
-    descripcion: "Recursos de apoyo para la vida liceal.",
-    textoBoton: "Ver recursos",
-    contenido: [
-      "Espacio pensado para compartir información de apoyo para estudiantes y familias.",
-      "Puede incluir guías, orientaciones, horarios, materiales o información de acompañamiento."
-    ],
-    enlaces: [
-      { texto: "Agregar recurso", url: "#" }
-    ]
+    titulo: "EDUx Ceibal",
+    descripcion: "Catálogo de cursos en línea sobre tecnología, inclusión, ciudadanía digital y prácticas educativas.",
+    publico: "Docentes · Comunidad educativa",
+    logo: "img/recursos/logo-edux.png",
+    url: "https://equipo.edux.ceibal.edu.uy/",
+    textoBoton: "Ver cursos"
+  },
+  {
+    titulo: "DGES · Educación Secundaria",
+    descripcion: "Información oficial, propuesta educativa, programas, inscripciones, noticias y trámites de Secundaria.",
+    publico: "Estudiantes · Familias · Docentes",
+    logo: "img/recursos/logo-dges.png",
+    url: "https://www.dges.edu.uy/",
+    textoBoton: "Visitar DGES"
+  },
+  {
+    titulo: "Estudiantes DGES",
+    descripcion: "Inscripciones liceales, escolaridades, constancias, pases, reválidas y programas de asignaturas.",
+    publico: "Estudiantes · Familias",
+    logo: "img/recursos/logo-dges-estudiantes.png",
+    url: "https://www.dges.edu.uy/estudiantes",
+    textoBoton: "Ver información"
   }
 ];
 
 const galeria = [
-  { titulo: "Actividades", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #061a40, #1459b8)" },
-  { titulo: "Aula", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #1459b8, #44b3e6)" },
-  { titulo: "Comunidad", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #0b2b66, #f4c542)" },
-  { titulo: "Talleres", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #061a40, #44b3e6)" },
-  { titulo: "Proyectos", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #0b2b66, #1459b8)" },
-  { titulo: "Encuentros", descripcion: "Espacio para foto", fondo: "linear-gradient(135deg, #1459b8, #061a40)" }
+  { titulo: "Juramento de fidelidad a la bandera", descripcion: "Acto conmemorativo · 19 de junio", imagen: "img/galeria/2026/01-acto-bandera.jpg" },
+  { titulo: "Comunidad reunida en el acto", descripcion: "Estudiantes y docentes · 19 de junio", imagen: "img/galeria/2026/02-acto-bandera.jpg" },
+  { titulo: "Símbolos que nos representan", descripcion: "Acto conmemorativo · 19 de junio", imagen: "img/galeria/2026/03-acto-bandera.jpg" },
+  { titulo: "Participación estudiantil", descripcion: "Juramento de fidelidad a la bandera", imagen: "img/galeria/2026/04-acto-bandera.jpg" },
+  { titulo: "Equipo naranja", descripcion: "Apertura del Proyecto Estrellas 2026", imagen: "img/galeria/2026/05-proyecto-estrellas.jpg" },
+  { titulo: "Equipo violeta", descripcion: "Apertura del Proyecto Estrellas 2026", imagen: "img/galeria/2026/06-proyecto-estrellas.jpg", rotada: true },
+  { titulo: "Equipo celeste", descripcion: "Apertura del Proyecto Estrellas 2026", imagen: "img/galeria/2026/07-proyecto-estrellas.jpg" },
+  { titulo: "Identidad y compañerismo", descripcion: "Proyecto Estrellas · Turno vespertino", imagen: "img/galeria/2026/08-proyecto-estrellas.jpg" },
+  { titulo: "Nueva Aula Comedor", descripcion: "Un espacio inaugurado durante 2026", imagen: "img/galeria/2026/09-aula-comedor.jpg" },
+  { titulo: "El comedor por dentro", descripcion: "Encuentro, alimentación y convivencia", imagen: "img/galeria/2026/10-aula-comedor.jpg" },
+  { titulo: "Jornada de ajedrez", descripcion: "Concentración y pensamiento estratégico", imagen: "img/galeria/2026/11-jornada-ajedrez.jpg" },
+  { titulo: "Aprender jugando", descripcion: "Estudiantes del Liceo N.º 3 en el Liceo N.º 7", imagen: "img/galeria/2026/12-jornada-ajedrez.jpg" },
+  { titulo: "Futsal masculino", descripcion: "Juegos Deportivos Nacionales 2026", imagen: "img/galeria/2026/13-futsal.jpg" },
+  { titulo: "Representando al liceo", descripcion: "Deporte, compromiso y compañerismo", imagen: "img/galeria/2026/14-futsal.jpg" },
+  { titulo: "Conociendo nuestro comedor", descripcion: "Presentación de trabajos interdisciplinarios", imagen: "img/galeria/2026/15-conociendo-comedor.jpg" },
+  { titulo: "Entre estadios y cocinas", descripcion: "Clases abiertas con las familias", imagen: "img/galeria/2026/16-estadios-cocinas.jpg" },
+  { titulo: "Pastel para enemigos", descripcion: "Lectura, convivencia y trabajo colaborativo", imagen: "img/galeria/2026/17-pastel-enemigos.jpg" },
+  { titulo: "Ciudadanía digital", descripcion: "Ciberconvivencia y participación responsable", imagen: "img/galeria/2026/18-ciudadania-digital.jpg" },
+  { titulo: "Promotores de salud", descripcion: "Prevención, diálogo y decisiones saludables", imagen: "img/galeria/2026/19-promotores-salud.jpg" },
+  { titulo: "CyberTeam L3", descripcion: "Robótica, programación e innovación", imagen: "img/galeria/2026/20-cyberteam.webp" },
+  { titulo: "Partidas que enseñan", descripcion: "Jornada de ajedrez y encuentro entre estudiantes", imagen: "img/galeria/2026/21-ajedrez.jpg" },
+  { titulo: "Pensar antes de mover", descripcion: "Concentración y estrategia en cada tablero", imagen: "img/galeria/2026/22-ajedrez.jpg" },
+  { titulo: "Aprendizaje compartido", descripcion: "Una jornada de intercambio a través del ajedrez", imagen: "img/galeria/2026/23-ajedrez.jpg" },
+  { titulo: "Encuentro de ajedrez", descripcion: "Respeto, juego limpio y nuevas experiencias", imagen: "img/galeria/2026/24-ajedrez.jpg" },
+  { titulo: "Taller en la Biblioteca", descripcion: "Primeras experiencias frente al tablero", imagen: "img/galeria/2026/25-taller-ajedrez.jpg" },
+  { titulo: "El ajedrez nos reúne", descripcion: "Un espacio para aprender y compartir", imagen: "img/galeria/2026/26-taller-ajedrez.jpg" },
+  { titulo: "Estrategias en construcción", descripcion: "Taller de ajedrez del Liceo N.º 3", imagen: "img/galeria/2026/27-taller-ajedrez.jpg" },
+  { titulo: "Biblioteca en movimiento", descripcion: "Lectura, juegos y pensamiento", imagen: "img/galeria/2026/28-taller-ajedrez.jpg" },
+  { titulo: "Nuevos desafíos", descripcion: "Estudiantes participando del taller de ajedrez", imagen: "img/galeria/2026/29-taller-ajedrez.jpg" },
+  { titulo: "Almuerzo en el liceo", descripcion: "Alimentación y bienestar durante la jornada", imagen: "img/galeria/2026/30-almuerzo.jpg" },
+  { titulo: "Equipo verde", descripcion: "Color, alegría y pertenencia en el Proyecto Estrellas", imagen: "img/galeria/2026/31-proyecto-estrellas.jpg" },
+  { titulo: "Presentaciones interdisciplinarias", descripcion: "Estudiantes compartiendo lo investigado", imagen: "img/galeria/2026/32-conociendo-comedor.jpg" },
+  { titulo: "Producciones del proyecto", descripcion: "Conociendo nuestro comedor", imagen: "img/galeria/2026/33-conociendo-comedor.jpg" },
+  { titulo: "Comunicar lo aprendido", descripcion: "Exposición y trabajo colaborativo", imagen: "img/galeria/2026/34-conociendo-comedor.jpg" },
+  { titulo: "Aprender investigando", descripcion: "Circuitos productivos, alimentación y estadísticas", imagen: "img/galeria/2026/35-conociendo-comedor.jpg" },
+  { titulo: "Una jornada para compartir", descripcion: "Cierre de Conociendo nuestro comedor", imagen: "img/galeria/2026/36-conociendo-comedor.jpg" },
+  { titulo: "Familias en el aula", descripcion: "Clases abiertas de Entre estadios y cocinas", imagen: "img/galeria/2026/37-estadios-cocinas.jpg" },
+  { titulo: "Geografía para compartir", descripcion: "Culturas y territorios en diálogo", imagen: "img/galeria/2026/38-estadios-cocinas.jpg" },
+  { titulo: "Recorridos por el mundo", descripcion: "Aprendizajes integrados con Inglés y Geografía", imagen: "img/galeria/2026/39-estadios-cocinas.jpg" },
+  { titulo: "El liceo recibe a las familias", descripcion: "Encuentro en torno a los aprendizajes", imagen: "img/galeria/2026/40-estadios-cocinas.jpg" },
+  { titulo: "Cocinar y convivir", descripcion: "Cierre del proyecto Pastel para enemigos", imagen: "img/galeria/2026/41-pastel-enemigos.jpg" },
+  { titulo: "Una experiencia compartida", descripcion: "Preparación de pasteles en clase", imagen: "img/galeria/2026/42-pastel-enemigos.jpg" },
+  { titulo: "Aprender haciendo", descripcion: "Creatividad y colaboración entre estudiantes", imagen: "img/galeria/2026/43-pastel-enemigos.jpg" },
+  { titulo: "Convivencia en acción", descripcion: "Empatía, compañerismo y reflexión", imagen: "img/galeria/2026/44-pastel-enemigos.jpg" },
+  { titulo: "Cuidarnos en internet", descripcion: "Taller de ciudadanía digital", imagen: "img/galeria/2026/45-ciudadania-digital.jpg" },
+  { titulo: "Ciberconvivencia", descripcion: "Herramientas para participar de forma responsable", imagen: "img/galeria/2026/46-ciudadania-digital.jpg" },
+  { titulo: "Dialogar para prevenir", descripcion: "Sexting, grooming y ciudadanía digital", imagen: "img/galeria/2026/47-ciudadania-digital.jpg" },
+  { titulo: "Promoción de la salud", descripcion: "Estudiantes construyendo herramientas de prevención", imagen: "img/galeria/2026/48-promotores-salud.jpg" },
+  { titulo: "Escuchar y participar", descripcion: "Taller de Promotores de salud", imagen: "img/galeria/2026/49-promotores-salud.jpg" },
+  { titulo: "Decisiones saludables", descripcion: "Reflexión, información y trabajo en equipo", imagen: "img/galeria/2026/50-promotores-salud.jpg" }
 ];
 
 const videos = [
   {
-    titulo: "Video institucional",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    titulo: "Apertura del Proyecto Estrellas · Turno vespertino",
+    fecha: "26 de junio de 2026",
+    descripcion: "Una jornada de identidad, creatividad y compañerismo para dar comienzo al proyecto institucional.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/Daq_Hz7PzeA/"
   },
   {
-    titulo: "Actividades del liceo",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    titulo: "Apertura del Proyecto Estrellas · Turno matutino",
+    fecha: "25 de junio de 2026",
+    descripcion: "El turno matutino inició una nueva edición del proyecto con desafíos, valores y participación.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/DaB4LJlpila/"
+  },
+  {
+    titulo: "Taller de ajedrez en la Biblioteca",
+    fecha: "2026",
+    descripcion: "Una invitación a mejorar la concentración, la memoria y la estrategia a través del ajedrez.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/DYdhPyQuuvg/"
+  },
+  {
+    titulo: "Acto de los Treinta y Tres Orientales",
+    fecha: "22 de abril de 2026",
+    descripcion: "Registro del acto realizado junto a estudiantes, docentes, funcionarios y familias.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/DYdfuGNhmVe/"
+  },
+  {
+    titulo: "Cuadro de honor 2026",
+    fecha: "2026",
+    descripcion: "Presentación de los estudiantes elegidos para portar y escoltar los pabellones nacionales.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/DYN8s_jvWzO/"
+  },
+  {
+    titulo: "El comedor comenzó a funcionar",
+    fecha: "2026",
+    descripcion: "Un recorrido por el servicio y por el trabajo cotidiano que sostiene esta propuesta.",
+    tipo: "instagram",
+    url: "https://www.instagram.com/reel/DYLiXlLstic/"
   }
 ];
 
@@ -509,6 +578,26 @@ function crearDetalleComunicado() {
     ? `<img src="${comunicado.imagen}" alt="${comunicado.titulo}">`
     : `<span>Espacio para imagen del comunicado</span>`;
 
+  const resultados = comunicado.resultados?.length
+    ? `
+      <section class="resultados-bandera" aria-labelledby="tituloResultadosBandera">
+        <p class="etiqueta">Diseños seleccionados</p>
+        <h3 id="tituloResultadosBandera">Primer, segundo y tercer lugar</h3>
+        <div class="podio-bandera">
+          ${comunicado.resultados.map((resultado) => `
+            <figure class="puesto-bandera ${resultado.destacado ? "puesto-ganador" : ""}">
+              <a href="${resultado.imagen}" target="_blank" rel="noopener" aria-label="Ampliar ${resultado.puesto}">
+                <img src="${resultado.imagen}" alt="${resultado.puesto} del concurso de la bandera del Liceo N.° 3">
+              </a>
+              <figcaption>${resultado.puesto}</figcaption>
+            </figure>
+          `).join("")}
+        </div>
+        <p class="ayuda-imagen">Hacé clic en cada diseño para verlo en tamaño completo.</p>
+      </section>
+    `
+    : "";
+
   contenedor.innerHTML = `
     <article class="detalle-comunicado revelar">
       <span class="fecha">${comunicado.fecha}</span>
@@ -522,6 +611,7 @@ function crearDetalleComunicado() {
           ${imagen}
         </div>
       </div>
+      ${resultados}
     </article>
   `;
 }
@@ -758,12 +848,17 @@ function crearPublicacionesApal() {
 function crearRecursos() {
   const contenedor = document.querySelector("#contenedorRecursos");
   if (!contenedor) return;
-  contenedor.innerHTML = recursos.map((recurso, indice) => `
+  contenedor.innerHTML = recursos.map((recurso) => `
     <article class="tarjeta-recurso revelar">
-      <span>${indice + 1}</span>
-      <h3>${recurso.titulo}</h3>
-      <p>${recurso.descripcion}</p>
-      <a class="boton-recurso" href="recurso.html?id=${recurso.id}">${recurso.textoBoton}</a>
+      <div class="logo-recurso">
+        <img src="${recurso.logo}" alt="Logo de ${recurso.titulo}" loading="lazy">
+      </div>
+      <div class="contenido-tarjeta-recurso">
+        <p class="publico-recurso">${recurso.publico}</p>
+        <h3>${recurso.titulo}</h3>
+        <p>${recurso.descripcion}</p>
+        <a class="boton-recurso" href="${recurso.url}" target="_blank" rel="noopener noreferrer">${recurso.textoBoton}<span aria-hidden="true">↗</span></a>
+      </div>
     </article>
   `).join("");
 }
@@ -816,10 +911,19 @@ function crearGaleria() {
   const contenedor = document.querySelector("#contenedorGaleria");
   if (!contenedor) return;
   contenedor.innerHTML = galeria.map((item) => `
-    <article class="item-galeria revelar" style="--fondo-galeria: ${item.fondo};">
-      <h3>${item.titulo}</h3>
-      <p>${item.descripcion}</p>
-    </article>
+    <button
+      class="item-galeria boton-imagen-galeria revelar"
+      type="button"
+      style="--fondo-galeria: url('../${item.imagen}');"
+      data-imagen="${item.imagen}"
+      data-rotada="${item.rotada ? "true" : "false"}"
+      data-descripcion="${item.titulo} — ${item.descripcion}"
+      aria-label="Ampliar imagen: ${item.titulo}">
+      <span class="contenido-item-galeria">
+        <strong>${item.titulo}</strong>
+        <small>${item.descripcion}</small>
+      </span>
+    </button>
   `).join("");
 }
 
@@ -828,15 +932,20 @@ function crearVideos() {
   if (!contenedor) return;
   contenedor.innerHTML = videos.map((video) => `
     <article class="video-tarjeta revelar">
-      <div class="video-marco">
-        <iframe
-          src="${video.url}"
-          title="${video.titulo}"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="instagram-publicacion video-instagram">
+        <blockquote
+          class="instagram-media"
+          data-instgrm-permalink="${video.url}"
+          data-instgrm-version="14">
+          <a href="${video.url}" target="_blank" rel="noopener noreferrer">Ver video en Instagram</a>
+        </blockquote>
       </div>
-      <h3>${video.titulo}</h3>
+      <div class="contenido-video-tarjeta">
+        <span class="fecha">${video.fecha}</span>
+        <h3>${video.titulo}</h3>
+        <p>${video.descripcion}</p>
+        <a class="enlace-tarjeta" href="${video.url}" target="_blank" rel="noopener noreferrer">Abrir en Instagram</a>
+      </div>
     </article>
   `).join("");
 }
@@ -864,26 +973,65 @@ function activarVisorImagenes() {
   visor.hidden = true;
   visor.innerHTML = `
     <button class="cerrar-visor" type="button" aria-label="Cerrar imagen ampliada">&times;</button>
+    <button class="navegacion-visor anterior-visor" type="button" aria-label="Ver imagen anterior">&#10094;</button>
     <img class="imagen-visor" src="" alt="">
+    <button class="navegacion-visor siguiente-visor" type="button" aria-label="Ver imagen siguiente">&#10095;</button>
+    <span class="contador-visor" aria-live="polite"></span>
   `;
   document.body.appendChild(visor);
 
   const imagenVisor = visor.querySelector(".imagen-visor");
   const botonCerrar = visor.querySelector(".cerrar-visor");
+  const botonAnterior = visor.querySelector(".anterior-visor");
+  const botonSiguiente = visor.querySelector(".siguiente-visor");
+  const contadorVisor = visor.querySelector(".contador-visor");
+  let imagenesDisponibles = [];
+  let indiceActual = 0;
+  let elementoOrigen = null;
+
+  const mostrarImagen = (indice) => {
+    if (!imagenesDisponibles.length) return;
+
+    indiceActual = (indice + imagenesDisponibles.length) % imagenesDisponibles.length;
+    const botonImagen = imagenesDisponibles[indiceActual];
+
+    imagenVisor.src = botonImagen.dataset.imagen;
+    imagenVisor.alt = botonImagen.dataset.descripcion || "Imagen ampliada";
+    imagenVisor.classList.toggle("imagen-rotada", botonImagen.dataset.rotada === "true");
+    contadorVisor.textContent = `${indiceActual + 1} de ${imagenesDisponibles.length}`;
+
+    const hayVariasImagenes = imagenesDisponibles.length > 1;
+    botonAnterior.hidden = !hayVariasImagenes;
+    botonSiguiente.hidden = !hayVariasImagenes;
+    contadorVisor.hidden = !hayVariasImagenes;
+  };
 
   const cerrarVisor = () => {
     visor.hidden = true;
     document.body.classList.remove("visor-abierto");
     imagenVisor.src = "";
     imagenVisor.classList.remove("imagen-rotada");
+    elementoOrigen?.focus();
   };
+
+  botonAnterior.addEventListener("click", (evento) => {
+    evento.stopPropagation();
+    mostrarImagen(indiceActual - 1);
+  });
+
+  botonSiguiente.addEventListener("click", (evento) => {
+    evento.stopPropagation();
+    mostrarImagen(indiceActual + 1);
+  });
 
   document.addEventListener("click", (evento) => {
     const botonImagen = evento.target.closest(".boton-imagen-galeria");
     if (botonImagen) {
-      imagenVisor.src = botonImagen.dataset.imagen;
-      imagenVisor.alt = botonImagen.dataset.descripcion;
-      imagenVisor.classList.toggle("imagen-rotada", botonImagen.dataset.rotada === "true");
+      imagenesDisponibles = Array.from(document.querySelectorAll(".boton-imagen-galeria"))
+        .filter((boton) => boton.dataset.imagen);
+      indiceActual = imagenesDisponibles.indexOf(botonImagen);
+      elementoOrigen = botonImagen;
+      mostrarImagen(indiceActual);
       visor.hidden = false;
       document.body.classList.add("visor-abierto");
       botonCerrar.focus();
@@ -896,7 +1044,11 @@ function activarVisorImagenes() {
   });
 
   document.addEventListener("keydown", (evento) => {
-    if (evento.key === "Escape" && !visor.hidden) cerrarVisor();
+    if (visor.hidden) return;
+
+    if (evento.key === "Escape") cerrarVisor();
+    if (evento.key === "ArrowLeft") mostrarImagen(indiceActual - 1);
+    if (evento.key === "ArrowRight") mostrarImagen(indiceActual + 1);
   });
 }
 

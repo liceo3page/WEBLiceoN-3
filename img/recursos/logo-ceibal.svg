@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150" role="img" aria-labelledby="title">
+  <title id="title">Ceibal</title>
+  <rect width="460" height="150" rx="28" fill="#ffffff"/>
+  <circle cx="70" cy="75" r="48" fill="#7bc043"/>
+  <circle cx="70" cy="75" r="27" fill="#ffffff"/>
+  <path d="M70 28v94M23 75h94M37 42l66 66M103 42l-66 66" stroke="#7bc043" stroke-width="9"/>
+  <text x="140" y="96" fill="#343a40" font-family="Arial, sans-serif" font-size="64" font-weight="700">Ceibal</text>
+</svg>

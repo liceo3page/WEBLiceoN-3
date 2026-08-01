@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-labelledby="title">
+  <title id="title">CREA</title>
+  <rect width="420" height="150" rx="28" fill="#ffffff"/>
+  <circle cx="72" cy="75" r="48" fill="#f58220"/>
+  <path d="M47 76c0-20 15-35 35-35 12 0 23 5 30 14L96 68c-4-5-9-8-15-8-9 0-16 7-16 16s7 16 16 16c6 0 12-3 15-8l16 13c-7 9-18 14-30 14-20 0-35-15-35-35z" fill="#fff"/>
+  <text x="138" y="94" fill="#143a68" font-family="Arial, sans-serif" font-size="64" font-weight="800">CREA</text>
+</svg>
