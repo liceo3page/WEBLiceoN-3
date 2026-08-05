@@ -2,14 +2,13 @@
 const comunicados = [
   {
     id: "presentacion-pagina-web",
-    titulo: "Presentación oficial de la página web del liceo",
-    fecha: "Fecha a definir",
-    descripcion: "Próximamente realizaremos la presentación oficial del nuevo sitio web institucional del Liceo N.° 3.",
+    titulo: "Presentamos la página web de nuestra institución",
+    fecha: "",
+    descripcion: "Compartimos la página web institucional del Liceo N.° 3, un nuevo espacio de información y encuentro para toda la comunidad educativa.",
     imagen: "img/comunicados/portada-web.png",
     contenido: [
-      "Invitamos a la comunidad educativa a la presentación oficial de la página web del Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”.",
-      "El nuevo sitio será un espacio de información y encuentro donde se compartirán comunicados, proyectos, recursos, actividades y novedades institucionales.",
-      "La fecha y los detalles de la presentación se comunicarán próximamente."
+      "Presentamos la página web de nuestra institución, el Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”.",
+      "Este sitio es un espacio de información y encuentro donde compartiremos comunicados, proyectos, recursos, actividades y novedades institucionales con estudiantes, familias y toda la comunidad educativa."
     ]
   },
   {
@@ -288,6 +287,8 @@ const proyectos = [
     titulo: "Laboratorio",
     descripcion: "Experiencias prácticas para aprender ciencia desde la observación y la exploración.",
     imagen: "linear-gradient(135deg, #1459b8, #061a40)",
+    portada: "img/proyectos/laboratorio/portada-lampara-lava.webp",
+    imagenDetalle: "img/proyectos/laboratorio/portada-lampara-lava.webp",
     publicaciones: []
   }
 ];
@@ -532,7 +533,7 @@ function crearComunicados() {
     <article class="tarjeta-comunicado revelar">
       ${comunicado.imagen ? `<img class="imagen-comunicado-card" src="${comunicado.imagen}" alt="${comunicado.titulo}">` : ""}
       <div class="contenido-comunicado-card">
-      <span class="fecha">${comunicado.fecha}</span>
+      ${comunicado.fecha ? `<span class="fecha">${comunicado.fecha}</span>` : ""}
       <h3>${comunicado.titulo}</h3>
       <p>${comunicado.descripcion}</p>
       <a class="enlace-tarjeta" href="comunicado.html?id=${comunicado.id}">Leer más</a>
@@ -600,7 +601,7 @@ function crearDetalleComunicado() {
 
   contenedor.innerHTML = `
     <article class="detalle-comunicado revelar">
-      <span class="fecha">${comunicado.fecha}</span>
+      ${comunicado.fecha ? `<span class="fecha">${comunicado.fecha}</span>` : ""}
       <h2>${comunicado.titulo}</h2>
       <div class="detalle-comunicado-grid">
         <div class="contenido-comunicado">
@@ -678,16 +679,7 @@ function crearDetalleProyecto() {
 
   const publicaciones = actividades.length
     ? actividades.map(crearPublicacionProyecto).join("")
-    : `<article class="publicacion-proyecto revelar">
-        <div class="foto-placeholder medio-publicacion">
-          <span>Espacio para primera publicación</span>
-        </div>
-        <div>
-          <p class="etiqueta">Publicaciones</p>
-          <h3>Sin publicaciones cargadas todavía</h3>
-          <p>Cuando tengas imágenes, videos o textos de este proyecto, los agregamos en el archivo app.js.</p>
-        </div>
-      </article>`;
+    : "";
 
   contenedor.innerHTML = `
     <article class="detalle-proyecto revelar">
@@ -714,9 +706,7 @@ function crearDetalleProyecto() {
       <p>Este espacio funciona como un muro interno del proyecto, con imágenes, videos y textos breves.</p>
     </div>
 
-    <div class="muro-publicaciones">
-      ${publicaciones}
-    </div>
+    ${publicaciones ? `<div class="muro-publicaciones">${publicaciones}</div>` : ""}
   `;
 }
 
