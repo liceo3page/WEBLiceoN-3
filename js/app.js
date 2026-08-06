@@ -14,7 +14,7 @@ const comunicados = [
   {
     id: "presentacion-bandera-liceo",
     titulo: "El Liceo N.° 3 ya tiene su bandera oficial",
-    fecha: "Acto oficial: fecha a confirmar",
+    fecha: "Presentación oficial: próximamente",
     descripcion: "Ya conocemos el diseño ganador y las propuestas que obtuvieron el segundo y tercer lugar. Próximamente presentaremos oficialmente nuestra bandera.",
     imagen: "img/comunicados/bandera-primer-lugar.png",
     contenido: [
