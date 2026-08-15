@@ -1,6 +1,18 @@
 // Cambia estos datos durante el año para actualizar el sitio.
 const comunicados = [
   {
+    id: "bono-colaboracion-apal-setiembre",
+    titulo: "Bono Colaboración APAL",
+    fecha: "Sorteo: 4 de septiembre de 2026",
+    descripcion: "Los estudiantes ya tienen los bonos para la venta. Tu colaboración ayuda a fortalecer las iniciativas de nuestra comunidad educativa.",
+    imagen: "img/apal/bono-colaboracion-setiembre-horizontal.png",
+    contenido: [
+      "APAL invita a toda la comunidad educativa a colaborar con una nueva edición del Bono Colaboración.",
+      "El primer premio es una canasta dulce y el segundo, un set de termo, mate y bombilla. El sorteo se realizará el 4 de septiembre de 2026.",
+      "Los estudiantes ya recibieron los bonos para la venta. ¡Gracias por acompañar y apoyar al Liceo N.° 3!"
+    ]
+  },
+  {
     id: "presentacion-pagina-web",
     titulo: "Presentamos la página web de nuestra institución",
     fecha: "",
@@ -115,6 +127,13 @@ const proyectos = [
     portada: "img/robotica/portada.webp",
     publicaciones: [
       {
+        titulo: "CyberTeam L3 conversa con la ciencia",
+        fecha: "14 de agosto de 2026",
+        descripcion: "El equipo entrevistó a Karolain Mello, docente asistente del Laboratorio de Recursos Naturales de la Facultad de Ciencias en la sede Rivera del Cenur Noreste – Udelar. Una experiencia que conectó curiosidad, tecnología y ciencia.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/p/DcCVwUpFNm_/"
+      },
+      {
         titulo: "CyberTeam L3 vuelve a decir presente",
         fecha: "2026",
         descripcion: "Por tercer a&ntilde;o consecutivo, el equipo CyberTeam L3 participa en la Olimp&iacute;ada de Rob&oacute;tica, Programaci&oacute;n y Videojuegos de Ceibal. En esta edici&oacute;n 13: Territorios Vivos, nuestros estudiantes contin&uacute;an demostrando creatividad, trabajo en equipo e innovaci&oacute;n tecnol&oacute;gica, representando con orgullo al Liceo N.&deg; 3 de Rivera. Integrantes del equipo: Alison Acevedo, Luanna Da Cunha y Julio C&eacute;sar Tajes. El equipo est&aacute; integrado por estudiantes del Liceo N.&deg; 3 y del Liceo N.&deg; 8, fortaleciendo el trabajo colaborativo entre instituciones. Felicitaciones tambi&eacute;n al Prof. Pablo Macedo por acompa&ntilde;ar este proceso.",
@@ -137,6 +156,13 @@ const proyectos = [
     portada: "img/proyectos/biblioteca/ajedrez-03.jpg",
     imagenDetalle: "img/proyectos/biblioteca/ajedrez-03.jpg",
     publicaciones: [
+      {
+        titulo: "Juegos Narrativos Nacionales 2026",
+        fecha: "11 de agosto de 2026",
+        descripcion: "Recibimos al escritor Alex García, autor de Garabatos, y a Valeria Tanco, coordinadora del Instituto Nacional de Letras. Los estudiantes conocieron el proceso creativo de la obra y exploraron recursos para construir sus propios personajes.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/p/DcCX6fNlOVo/"
+      },
       {
         titulo: "Estudiantes del Liceo N.º 3 en una jornada de ajedrez",
         fecha: "30 de julio de 2026",
@@ -207,6 +233,13 @@ const proyectos = [
     portada: "img/proyectos/interdisciplinarios/comedor-06.jpg",
     imagenDetalle: "img/proyectos/interdisciplinarios/comedor-06.jpg",
     publicaciones: [
+      {
+        titulo: "Taller de prevención y sensibilización sobre el acoso escolar",
+        fecha: "4 de agosto de 2026",
+        descripcion: "El grupo de 8.º 8 participó en una propuesta de reflexión, respeto y construcción de vínculos saludables, con un cierre cooperativo para fortalecer la convivencia y el trabajo en equipo.",
+        tipo: "instagram",
+        recurso: "https://www.instagram.com/p/DbqxapOFPWz/"
+      },
       {
         titulo: "Conociendo nuestro comedor · Presentación de trabajos",
         fecha: "30 de julio de 2026",
@@ -294,6 +327,13 @@ const proyectos = [
 ];
 
 const publicacionesApal = [
+  {
+    titulo: "Bono Colaboración · Sorteo de septiembre",
+    fecha: "Sorteo: 4 de septiembre de 2026",
+    descripcion: "Los estudiantes ya tienen los bonos para la venta. Primer premio: canasta dulce. Segundo premio: termo, mate y bombilla. ¡Gracias por apoyar las iniciativas de APAL!",
+    tipo: "galeria",
+    recursos: ["img/apal/bono-colaboracion-setiembre-horizontal.png"]
+  },
   {
     titulo: "Bono Colaboración: agradecimiento a la comunidad",
     fecha: "10 de julio de 2026",
@@ -608,7 +648,7 @@ function crearDetalleComunicado() {
           ${comunicado.contenido.map((parrafo) => `<p>${parrafo}</p>`).join("")}
           <a class="boton boton-azul" href="comunicados.html">Volver a comunicados</a>
         </div>
-        <div class="foto-placeholder imagen-detalle-comunicado">
+        <div class="foto-placeholder imagen-detalle-comunicado ${comunicado.id === "bono-colaboracion-apal-setiembre" ? "imagen-detalle-afiche" : ""}">
           ${imagen}
         </div>
       </div>
@@ -1042,6 +1082,46 @@ function activarVisorImagenes() {
   });
 }
 
+function descripcionClima(codigo) {
+  if (codigo === 0) return "Despejado";
+  if ([1, 2, 3].includes(codigo)) return "Parcialmente nublado";
+  if ([45, 48].includes(codigo)) return "Con niebla";
+  if ([51, 53, 55, 56, 57].includes(codigo)) return "Llovizna";
+  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(codigo)) return "Lluvia";
+  if ([71, 73, 75, 77, 85, 86].includes(codigo)) return "Nieve";
+  if ([95, 96, 99].includes(codigo)) return "Tormenta";
+  return "Condiciones actuales";
+}
+
+async function cargarDatosInicio() {
+  const temperatura = document.querySelector("[data-clima-temperatura]");
+  const estado = document.querySelector("[data-clima-estado]");
+  const visitas = document.querySelector("[data-contador-visitas]");
+
+  if (temperatura && estado) {
+    try {
+      const respuesta = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-30.9053&longitude=-55.5508&current=temperature_2m,apparent_temperature,weather_code&timezone=America%2FMontevideo");
+      const datos = await respuesta.json();
+      temperatura.textContent = `${Math.round(datos.current.temperature_2m)} °C`;
+      estado.textContent = `${descripcionClima(datos.current.weather_code)} · sensación ${Math.round(datos.current.apparent_temperature)} °C`;
+    } catch {
+      estado.textContent = "El clima no está disponible en este momento";
+    }
+  }
+
+  if (visitas) {
+    try {
+      const accion = sessionStorage.getItem("visita-liceo3-contada") ? "" : "/up";
+      const respuesta = await fetch(`https://api.counterapi.dev/v1/liceo3rivera/visitas${accion}`);
+      const datos = await respuesta.json();
+      visitas.textContent = Number(datos.count ?? datos.value ?? 0).toLocaleString("es-UY");
+      sessionStorage.setItem("visita-liceo3-contada", "1");
+    } catch {
+      visitas.textContent = "—";
+    }
+  }
+}
+
 crearComunicados();
 crearDetalleComunicado();
 crearProyectos();
@@ -1054,3 +1134,4 @@ crearVideos();
 cargarEmbedsInstagram();
 activarAnimacionesScroll();
 activarVisorImagenes();
+cargarDatosInicio();
