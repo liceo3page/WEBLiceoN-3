@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liceo3rivera.com/sitemap.xml
