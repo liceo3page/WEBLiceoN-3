@@ -411,7 +411,8 @@ h3 {
 
 .pulso-rivera-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
   gap: 16px;
 }
 

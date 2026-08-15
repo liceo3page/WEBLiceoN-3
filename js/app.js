@@ -1096,7 +1096,6 @@ function descripcionClima(codigo) {
 async function cargarDatosInicio() {
   const temperatura = document.querySelector("[data-clima-temperatura]");
   const estado = document.querySelector("[data-clima-estado]");
-  const visitas = document.querySelector("[data-contador-visitas]");
 
   if (temperatura && estado) {
     try {
@@ -1109,17 +1108,6 @@ async function cargarDatosInicio() {
     }
   }
 
-  if (visitas) {
-    try {
-      const accion = sessionStorage.getItem("visita-liceo3-contada") ? "" : "/up";
-      const respuesta = await fetch(`https://api.counterapi.dev/v1/liceo3rivera/visitas${accion}`);
-      const datos = await respuesta.json();
-      visitas.textContent = Number(datos.count ?? datos.value ?? 0).toLocaleString("es-UY");
-      sessionStorage.setItem("visita-liceo3-contada", "1");
-    } catch {
-      visitas.textContent = "—";
-    }
-  }
 }
 
 crearComunicados();
