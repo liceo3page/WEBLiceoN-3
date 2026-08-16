@@ -409,6 +409,10 @@ h3 {
   object-position: center;
 }
 
+.actividad-imagen-estudiantes img {
+  object-position: center 60%;
+}
+
 .pulso-rivera {
   padding: 28px 0 0;
 }
