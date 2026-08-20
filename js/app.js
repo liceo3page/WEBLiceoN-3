@@ -153,7 +153,7 @@ const proyectos = [
     titulo: "Biblioteca",
     descripcion: "Un espacio de lectura, investigación, encuentro y propuestas que fortalecen el pensamiento, la creatividad y la convivencia.",
     imagen: "linear-gradient(135deg, #0b2b66, #44b3e6)",
-    portada: "/img/proyectos/biblioteca/ajedrez-03.jpg",
+    portada: "/img/proyectos/biblioteca/portada-joven-lector.webp",
     imagenDetalle: "/img/proyectos/biblioteca/ajedrez-03.jpg",
     publicaciones: [
       {
