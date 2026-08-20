@@ -539,6 +539,29 @@ const botonMenu = document.querySelector("#botonMenu");
 const menu = document.querySelector("#menu");
 const anioActual = document.querySelector("#anioActual");
 
+function marcarSeccionActual() {
+  let rutaActual = window.location.pathname.replace(/\/$/, "") || "/";
+
+  if (rutaActual.startsWith("/proyecto/")) rutaActual = "/proyectos";
+  if (rutaActual.startsWith("/comunicado/")) rutaActual = "/comunicados";
+  if (rutaActual.startsWith("/recurso/")) rutaActual = "/recursos";
+
+  document.querySelectorAll(".menu a").forEach((enlace) => {
+    const destino = new URL(enlace.href, window.location.origin);
+    const rutaDestino = destino.pathname.replace(/\/$/, "") || "/";
+    const esActual = !destino.hash && rutaDestino === rutaActual;
+
+    enlace.classList.toggle("activo", esActual);
+    if (esActual) {
+      enlace.setAttribute("aria-current", "page");
+    } else {
+      enlace.removeAttribute("aria-current");
+    }
+  });
+}
+
+marcarSeccionActual();
+
 if (anioActual) {
   anioActual.textContent = new Date().getFullYear();
 }
@@ -561,9 +584,12 @@ document.querySelectorAll(".menu a").forEach((enlace) => {
   });
 });
 
-window.addEventListener("scroll", () => {
+function actualizarEncabezado() {
   encabezado?.classList.toggle("con-sombra", window.scrollY > 20);
-});
+}
+
+actualizarEncabezado();
+window.addEventListener("scroll", actualizarEncabezado, { passive: true });
 
 function crearComunicados() {
   const contenedor = document.querySelector("#contenedorComunicados");
@@ -985,7 +1011,14 @@ function activarAnimacionesScroll() {
   const observador = new IntersectionObserver((entradas) => {
     entradas.forEach((entrada) => {
       if (entrada.isIntersecting) {
-        entrada.target.classList.add("visible");
+        const grupoEscalonado = entrada.target.closest(".grilla-actividades, .grilla-tarjetas, .grilla-proyectos");
+        const elementosGrupo = grupoEscalonado
+          ? Array.from(grupoEscalonado.querySelectorAll(":scope > .revelar"))
+          : [];
+        const indice = elementosGrupo.indexOf(entrada.target);
+        const retraso = indice >= 0 ? indice * 110 : 0;
+
+        window.setTimeout(() => entrada.target.classList.add("visible"), retraso);
         observador.unobserve(entrada.target);
       }
     });
@@ -1093,16 +1126,32 @@ function descripcionClima(codigo) {
   return "Condiciones actuales";
 }
 
+function visualClima(codigo) {
+  if (codigo === 0) return { icono: "☀", clase: "clima-sol" };
+  if ([1, 2, 3].includes(codigo)) return { icono: "☁", clase: "clima-nubes" };
+  if ([45, 48].includes(codigo)) return { icono: "≋", clase: "clima-niebla" };
+  if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(codigo)) return { icono: "☂", clase: "clima-lluvia" };
+  if ([71, 73, 75, 77, 85, 86].includes(codigo)) return { icono: "❄", clase: "clima-nieve" };
+  if ([95, 96, 99].includes(codigo)) return { icono: "ϟ", clase: "clima-tormenta" };
+  return { icono: "◌", clase: "clima-nubes" };
+}
+
 async function cargarDatosInicio() {
   const temperatura = document.querySelector("[data-clima-temperatura]");
   const estado = document.querySelector("[data-clima-estado]");
+  const icono = document.querySelector("[data-clima-icono]");
 
   if (temperatura && estado) {
     try {
       const respuesta = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-30.9053&longitude=-55.5508&current=temperature_2m,apparent_temperature,weather_code&timezone=America%2FMontevideo");
       const datos = await respuesta.json();
+      const visual = visualClima(datos.current.weather_code);
       temperatura.textContent = `${Math.round(datos.current.temperature_2m)} °C`;
       estado.textContent = `${descripcionClima(datos.current.weather_code)} · sensación ${Math.round(datos.current.apparent_temperature)} °C`;
+      if (icono) {
+        icono.textContent = visual.icono;
+        icono.className = `pulso-icono ${visual.clase}`;
+      }
     } catch {
       estado.textContent = "El clima no está disponible en este momento";
     }

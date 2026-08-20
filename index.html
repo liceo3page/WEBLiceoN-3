@@ -15,9 +15,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/estilos.css?v=proyectos-estudiantiles-2">
+  <link rel="stylesheet" href="/css/estilos.css?v=navbar-local-1">
 </head>
-<body>
+<body class="inicio-animado">
   <header class="encabezado" id="encabezado">
     <nav class="barra-navegacion" aria-label="Navegacion principal">
       <a class="marca" href="/" aria-label="Ir al inicio">
@@ -78,19 +78,19 @@
 
     <section class="franja-destacada" aria-label="Actividades destacadas">
       <div class="contenedor grilla-actividades">
-        <article class="actividad-destacada">
+        <article class="actividad-destacada revelar">
           <div class="actividad-imagen">
             <img src="/img/imagen1.heic" alt="Actividad del Liceo N.&deg; 3">
           </div>
           <h2>Actividades del liceo</h2>
         </article>
-        <article class="actividad-destacada">
+        <article class="actividad-destacada revelar">
           <div class="actividad-imagen actividad-imagen-estudiantes">
             <img src="/img/proyectos-estudiantiles-fiesta-familia.jpg" alt="Estudiantes del Liceo N.&deg; 3 participando en la Fiesta de la Familia">
           </div>
           <h2>Proyectos estudiantiles</h2>
         </article>
-        <article class="actividad-destacada">
+        <article class="actividad-destacada revelar">
           <div class="actividad-imagen">
             <img src="/img/institucional1.webp" alt="Comunidad educativa del Liceo N.&deg; 3">
           </div>
@@ -119,7 +119,7 @@
       </div>
     </section>
 
-    <section class="seccion seccion-clara">
+    <section class="seccion seccion-clara seccion-transicion">
       <div class="contenedor">
         <div class="encabezado-seccion revelar">
           <p class="etiqueta">&Uacute;ltimos comunicados</p>
@@ -130,7 +130,7 @@
       </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion seccion-transicion">
       <div class="contenedor">
         <div class="encabezado-seccion revelar">
           <p class="etiqueta">Proyectos</p>
@@ -144,7 +144,7 @@
     <section class="pulso-rivera pulso-rivera-final" aria-label="Clima actual en Rivera">
       <div class="contenedor pulso-rivera-grid">
         <div class="pulso-item" aria-live="polite">
-          <span class="pulso-icono" aria-hidden="true">☀</span>
+          <span class="pulso-icono clima-sol" data-clima-icono aria-hidden="true">☀</span>
           <div>
             <small>Rivera ahora</small>
             <strong data-clima-temperatura>— °C</strong>
@@ -183,7 +183,7 @@
     </div>
   </footer>
 
-  <script src="/js/app.js"></script>
+  <script src="/js/app.js?v=navbar-local-1"></script>
 </body>
 </html>
 
