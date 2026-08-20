@@ -851,6 +851,39 @@ h3 {
   font-size: 1.12rem;
 }
 
+.datos-comunicado {
+  display: grid;
+  gap: 10px;
+  margin: 26px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.datos-comunicado li {
+  padding: 11px 14px 11px 42px;
+  border: 1px solid rgba(20, 89, 184, 0.13);
+  border-radius: 12px;
+  color: var(--azul-profundo);
+  font-weight: 700;
+  background: var(--celeste-claro);
+}
+
+.datos-comunicado li::before {
+  content: "✓";
+  display: inline-block;
+  width: 28px;
+  margin-left: -29px;
+  color: var(--azul-medio);
+  font-weight: 800;
+}
+
+.acciones-comunicado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .imagen-detalle-comunicado {
   min-height: 360px;
   overflow: hidden;
@@ -876,6 +909,22 @@ h3 {
   height: 100%;
   min-height: 0;
   object-fit: contain;
+}
+
+.imagen-detalle-comunicado.imagen-detalle-vertical {
+  width: 100%;
+  max-width: 520px;
+  min-height: 0;
+  justify-self: end;
+  padding: 12px;
+  background: linear-gradient(145deg, #061a40, #1459b8 68%, #f4c542);
+}
+
+.imagen-detalle-comunicado.imagen-detalle-vertical img {
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  border-radius: calc(var(--radio) - 8px);
 }
 
 .resultados-bandera {

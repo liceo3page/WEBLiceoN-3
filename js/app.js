@@ -1,6 +1,23 @@
 // Cambia estos datos durante el año para actualizar el sitio.
 const comunicados = [
   {
+    id: "torneo-interno-ajedrez-2026",
+    titulo: "Torneo interno de ajedrez",
+    fecha: "Inscripciones hasta el 21 de agosto de 2026",
+    descripcion: "Invitamos a los estudiantes del Liceo N.° 3 a poner a prueba su estrategia, concentración y pasión por el ajedrez.",
+    imagen: "/img/comunicados/torneo-ajedrez-horizontal.webp",
+    imagenDetalle: "/img/comunicados/torneo-ajedrez-vertical.webp",
+    aficheVertical: true,
+    datos: ["Lunes 24 de agosto", "13:00 h", "Liceo N.° 3 de Rivera"],
+    enlace: "https://docs.google.com/forms/d/e/1FAIpQLSdWEOK0UXxnCOkBiqiz37Eglh52jmQN2pijYBMS9pRqBLQD2g/viewform",
+    textoEnlace: "Inscribirme al torneo",
+    contenido: [
+      "Invitamos a los estudiantes del Liceo N.° 3 a participar en el Torneo Interno de Ajedrez.",
+      "La actividad se realizará el lunes 24 de agosto a las 13:00 horas en el liceo. Las inscripciones estarán abiertas hasta el 21 de agosto.",
+      "¡Poné a prueba tu estrategia, concentración y pasión por el ajedrez!"
+    ]
+  },
+  {
     id: "bono-colaboracion-apal-setiembre",
     titulo: "Bono Colaboración APAL",
     fecha: "Sorteo: 4 de septiembre de 2026",
@@ -641,9 +658,18 @@ function crearDetalleComunicado() {
     imagenEncabezado.classList.add("foto-con-imagen");
   }
 
-  const imagen = comunicado.imagen
-    ? `<img src="${comunicado.imagen}" alt="${comunicado.titulo}">`
+  const imagenDetalle = comunicado.imagenDetalle || comunicado.imagen;
+  const imagen = imagenDetalle
+    ? `<img src="${imagenDetalle}" alt="Flyer de ${comunicado.titulo}">`
     : `<span>Espacio para imagen del comunicado</span>`;
+
+  const datos = comunicado.datos?.length
+    ? `<ul class="datos-comunicado">${comunicado.datos.map((dato) => `<li>${dato}</li>`).join("")}</ul>`
+    : "";
+
+  const enlace = comunicado.enlace
+    ? `<a class="boton boton-principal" href="${comunicado.enlace}" target="_blank" rel="noopener noreferrer">${comunicado.textoEnlace || "Más información"} <span aria-hidden="true">↗</span></a>`
+    : "";
 
   const resultados = comunicado.resultados?.length
     ? `
@@ -672,9 +698,13 @@ function crearDetalleComunicado() {
       <div class="detalle-comunicado-grid">
         <div class="contenido-comunicado">
           ${comunicado.contenido.map((parrafo) => `<p>${parrafo}</p>`).join("")}
-          <a class="boton boton-azul" href="/comunicados/">Volver a comunicados</a>
+          ${datos}
+          <div class="acciones-comunicado">
+            ${enlace}
+            <a class="boton boton-azul" href="/comunicados/">Volver a comunicados</a>
+          </div>
         </div>
-        <div class="foto-placeholder imagen-detalle-comunicado ${comunicado.id === "bono-colaboracion-apal-setiembre" ? "imagen-detalle-afiche" : ""}">
+        <div class="foto-placeholder imagen-detalle-comunicado ${comunicado.id === "bono-colaboracion-apal-setiembre" ? "imagen-detalle-afiche" : ""} ${comunicado.aficheVertical ? "imagen-detalle-vertical" : ""}">
           ${imagen}
         </div>
       </div>
