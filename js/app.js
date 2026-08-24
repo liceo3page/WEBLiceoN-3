@@ -3,18 +3,19 @@ const comunicados = [
   {
     id: "torneo-interno-ajedrez-2026",
     titulo: "Torneo interno de ajedrez",
-    fecha: "Inscripciones hasta el 21 de agosto de 2026",
-    descripcion: "Invitamos a los estudiantes del Liceo N.° 3 a poner a prueba su estrategia, concentración y pasión por el ajedrez.",
+    fecha: "Inscripciones cerradas",
+    descripcion: "Finalizó el período de inscripción para el Torneo Interno de Ajedrez del Liceo N.° 3.",
     imagen: "/img/comunicados/torneo-ajedrez-horizontal.webp",
     imagenDetalle: "/img/comunicados/torneo-ajedrez-vertical.webp",
     aficheVertical: true,
     datos: ["Lunes 24 de agosto", "13:00 h", "Liceo N.° 3 de Rivera"],
     enlace: "https://docs.google.com/forms/d/e/1FAIpQLSdWEOK0UXxnCOkBiqiz37Eglh52jmQN2pijYBMS9pRqBLQD2g/viewform",
     textoEnlace: "Inscribirme al torneo",
+    inscripcionesCerradas: true,
     contenido: [
-      "Invitamos a los estudiantes del Liceo N.° 3 a participar en el Torneo Interno de Ajedrez.",
-      "La actividad se realizará el lunes 24 de agosto a las 13:00 horas en el liceo. Las inscripciones estarán abiertas hasta el 21 de agosto.",
-      "¡Poné a prueba tu estrategia, concentración y pasión por el ajedrez!"
+      "El período de inscripción para el Torneo Interno de Ajedrez finalizó el 21 de agosto.",
+      "La actividad fue programada para el lunes 24 de agosto a las 13:00 horas en el Liceo N.° 3 de Rivera.",
+      "Agradecemos a todos los estudiantes que se anotaron para poner a prueba su estrategia, concentración y pasión por el ajedrez."
     ]
   },
   {
@@ -147,8 +148,14 @@ const proyectos = [
         titulo: "CyberTeam L3 conversa con la ciencia",
         fecha: "14 de agosto de 2026",
         descripcion: "El equipo entrevistó a Karolain Mello, docente asistente del Laboratorio de Recursos Naturales de la Facultad de Ciencias en la sede Rivera del Cenur Noreste – Udelar. Una experiencia que conectó curiosidad, tecnología y ciencia.",
-        tipo: "instagram",
-        recurso: "https://www.instagram.com/p/DcCVwUpFNm_/"
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/robotica/entrevista-ciencia/01.webp",
+          "/img/proyectos/robotica/entrevista-ciencia/02.webp",
+          "/img/proyectos/robotica/entrevista-ciencia/03.webp",
+          "/img/proyectos/robotica/entrevista-ciencia/04.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DcCVwUpFNm_/"
       },
       {
         titulo: "CyberTeam L3 vuelve a decir presente",
@@ -177,8 +184,16 @@ const proyectos = [
         titulo: "Juegos Narrativos Nacionales 2026",
         fecha: "11 de agosto de 2026",
         descripcion: "Recibimos al escritor Alex García, autor de Garabatos, y a Valeria Tanco, coordinadora del Instituto Nacional de Letras. Los estudiantes conocieron el proceso creativo de la obra y exploraron recursos para construir sus propios personajes.",
-        tipo: "instagram",
-        recurso: "https://www.instagram.com/p/DcCX6fNlOVo/"
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/01.webp",
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/02.webp",
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/03.webp",
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/04.webp",
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/05.webp",
+          "/img/proyectos/biblioteca/juegos-narrativos-2026/06.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DcCX6fNlOVo/"
       },
       {
         titulo: "Estudiantes del Liceo N.º 3 en una jornada de ajedrez",
@@ -251,11 +266,79 @@ const proyectos = [
     imagenDetalle: "/img/proyectos/interdisciplinarios/comedor-06.jpg",
     publicaciones: [
       {
+        titulo: "Promotores de Salud · Violencias y vínculos saludables",
+        fecha: "20 de agosto de 2026",
+        descripcion: "Estudiantes promotores de salud de 8.º y 9.º participaron en UTEC de un cuarto taller, desarrollado por RAP–ASSE, para reflexionar sobre violencias y construir vínculos respetuosos y saludables.",
+        tipo: "galeria",
+        recursos: ["/img/proyectos/interdisciplinarios/promotores-salud-vinculos/01.webp"],
+        enlaceInstagram: "https://www.instagram.com/p/DcSF04XudNP/"
+      },
+      {
+        titulo: "Bio Red Liceal · Hackateen",
+        fecha: "20 de agosto de 2026",
+        descripcion: "El grupo 9.º 4 presentó una propuesta que transforma residuos orgánicos ricos en almidón en bioplástico y articula ese trabajo con la huerta y el compostaje del liceo.",
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/interdisciplinarios/biored-liceal/01.webp",
+          "/img/proyectos/interdisciplinarios/biored-liceal/02.webp",
+          "/img/proyectos/interdisciplinarios/biored-liceal/03.webp",
+          "/img/proyectos/interdisciplinarios/biored-liceal/04.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DcSFiGcFJgV/"
+      },
+      {
+        titulo: "Espacio Joven: Frontera de Oportunidades",
+        fecha: "20 de agosto de 2026",
+        descripcion: "El grupo 7.º 7 presentó en Hackateen un espacio pensado por y para jóvenes, orientado a aprender, participar, emprender y crecer, con el acompañamiento de la profesora María Victoria Rodas.",
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/interdisciplinarios/espacio-joven/01.webp",
+          "/img/proyectos/interdisciplinarios/espacio-joven/02.webp",
+          "/img/proyectos/interdisciplinarios/espacio-joven/03.webp",
+          "/img/proyectos/interdisciplinarios/espacio-joven/04.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DcSE6giFAzC/"
+      },
+      {
+        titulo: "Jóvenes por un pueblo lindo y justo",
+        fecha: "20 de agosto de 2026",
+        descripcion: "El grupo 7.º 8 llevó a Hackateen una invitación a imaginar espacios públicos limpios, cuidados y construidos desde la responsabilidad de toda la comunidad.",
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/interdisciplinarios/pueblo-lindo-justo/01.webp",
+          "/img/proyectos/interdisciplinarios/pueblo-lindo-justo/02.webp",
+          "/img/proyectos/interdisciplinarios/pueblo-lindo-justo/03.webp",
+          "/img/proyectos/interdisciplinarios/pueblo-lindo-justo/04.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DcSDzDlFFdX/"
+      },
+      {
         titulo: "Taller de prevención y sensibilización sobre el acoso escolar",
         fecha: "4 de agosto de 2026",
         descripcion: "El grupo de 8.º 8 participó en una propuesta de reflexión, respeto y construcción de vínculos saludables, con un cierre cooperativo para fortalecer la convivencia y el trabajo en equipo.",
-        tipo: "instagram",
-        recurso: "https://www.instagram.com/p/DbqxapOFPWz/"
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/interdisciplinarios/acoso-escolar/01.webp",
+          "/img/proyectos/interdisciplinarios/acoso-escolar/02.webp",
+          "/img/proyectos/interdisciplinarios/acoso-escolar/03.webp",
+          "/img/proyectos/interdisciplinarios/acoso-escolar/04.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DbqxapOFPWz/"
+      },
+      {
+        titulo: "Conociendo nuestro comedor · Parte 2",
+        fecha: "30 de julio de 2026",
+        descripcion: "La segunda parte del proyecto reunió nuevas presentaciones, producciones e instancias de intercambio para seguir investigando la alimentación y el comedor desde diferentes asignaturas.",
+        tipo: "galeria",
+        recursos: [
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/01.webp",
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/02.webp",
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/03.webp",
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/04.webp",
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/05.webp",
+          "/img/proyectos/interdisciplinarios/comedor-parte-2/06.webp"
+        ],
+        enlaceInstagram: "https://www.instagram.com/p/DbcAFBcFHGC/"
       },
       {
         titulo: "Conociendo nuestro comedor · Presentación de trabajos",
@@ -616,7 +699,7 @@ function crearComunicados() {
     <article class="tarjeta-comunicado revelar">
       ${comunicado.imagen ? `<img class="imagen-comunicado-card" src="${comunicado.imagen}" alt="${comunicado.titulo}">` : ""}
       <div class="contenido-comunicado-card">
-      ${comunicado.fecha ? `<span class="fecha">${comunicado.fecha}</span>` : ""}
+      ${comunicado.fecha ? `<span class="fecha ${comunicado.inscripcionesCerradas ? "fecha-cerrada" : ""}">${comunicado.fecha}</span>` : ""}
       <h3>${comunicado.titulo}</h3>
       <p>${comunicado.descripcion}</p>
       <a class="enlace-tarjeta" href="/comunicado/?id=${comunicado.id}">Leer más</a>
@@ -667,7 +750,9 @@ function crearDetalleComunicado() {
     ? `<ul class="datos-comunicado">${comunicado.datos.map((dato) => `<li>${dato}</li>`).join("")}</ul>`
     : "";
 
-  const enlace = comunicado.enlace
+  const enlace = comunicado.inscripcionesCerradas
+    ? `<span class="boton boton-deshabilitado" aria-disabled="true">Inscripciones cerradas</span>`
+    : comunicado.enlace
     ? `<a class="boton boton-principal" href="${comunicado.enlace}" target="_blank" rel="noopener noreferrer">${comunicado.textoEnlace || "Más información"} <span aria-hidden="true">↗</span></a>`
     : "";
 
@@ -693,7 +778,7 @@ function crearDetalleComunicado() {
 
   contenedor.innerHTML = `
     <article class="detalle-comunicado revelar">
-      ${comunicado.fecha ? `<span class="fecha">${comunicado.fecha}</span>` : ""}
+      ${comunicado.fecha ? `<span class="fecha ${comunicado.inscripcionesCerradas ? "fecha-cerrada" : ""}">${comunicado.fecha}</span>` : ""}
       <h2>${comunicado.titulo}</h2>
       <div class="detalle-comunicado-grid">
         <div class="contenido-comunicado">
@@ -767,14 +852,14 @@ function crearDetalleProyecto() {
 
   const publicacionesDestacadas = proyecto.publicaciones
     .filter((publicacion) => publicacion.tipo === "youtube-destacado")
-    .map(crearPublicacionProyecto)
+    .map((publicacion) => crearPublicacionProyecto(publicacion, proyecto))
     .join("");
 
   const actividades = proyecto.publicaciones
     .filter((publicacion) => publicacion.tipo !== "youtube-destacado");
 
   const publicaciones = actividades.length
-    ? actividades.map(crearPublicacionProyecto).join("")
+    ? actividades.map((publicacion) => crearPublicacionProyecto(publicacion, proyecto)).join("")
     : "";
 
   contenedor.innerHTML = `
@@ -806,7 +891,18 @@ function crearDetalleProyecto() {
   `;
 }
 
-function crearPublicacionProyecto(publicacion) {
+function crearIdPublicacion(publicacion) {
+  if (publicacion.id) return publicacion.id;
+  return publicacion.titulo
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&[^;]+;/g, " ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function crearMedioPublicacion(publicacion, claseExtra = "medio-publicacion") {
   let medio = `<div class="foto-placeholder medio-publicacion"><span>Espacio para imagen o video</span></div>`;
 
   if (publicacion.tipo === "imagen" && publicacion.recurso) {
@@ -858,6 +954,14 @@ function crearPublicacionProyecto(publicacion) {
     `;
   }
 
+  return medio.replaceAll("medio-publicacion", claseExtra);
+}
+
+function crearPublicacionProyecto(publicacion, proyecto) {
+  const medio = crearMedioPublicacion(publicacion);
+  const idPublicacion = crearIdPublicacion(publicacion);
+  const enlaceDetalle = `/publicacion/?proyecto=${encodeURIComponent(proyecto.id)}&id=${encodeURIComponent(idPublicacion)}`;
+
   return `
     <article class="publicacion-proyecto ${publicacion.tipo === "youtube-destacado" ? "publicacion-video-destacado" : ""} revelar">
       ${medio}
@@ -865,10 +969,63 @@ function crearPublicacionProyecto(publicacion) {
         <span class="fecha">${publicacion.fecha}</span>
         <h3>${publicacion.titulo}</h3>
         <p>${publicacion.descripcion}</p>
+        <a class="boton boton-azul boton-publicacion" href="${enlaceDetalle}">Ver publicación completa</a>
         ${publicacion.tipo === "instagram" || publicacion.enlaceInstagram ? `<a class="enlace-tarjeta" href="${publicacion.enlaceInstagram || publicacion.recurso}" target="_blank" rel="noopener noreferrer">Abrir en Instagram</a>` : ""}
       </div>
     </article>
   `;
+}
+
+function crearDetallePublicacion() {
+  const contenedor = document.querySelector("#detallePublicacion");
+  if (!contenedor) return;
+
+  const parametros = new URLSearchParams(window.location.search);
+  const proyecto = proyectos.find((item) => item.id === parametros.get("proyecto"));
+  const id = parametros.get("id");
+  const indice = proyecto?.publicaciones.findIndex((item) => crearIdPublicacion(item) === id) ?? -1;
+  const publicacion = indice >= 0 ? proyecto.publicaciones[indice] : null;
+
+  if (!proyecto || !publicacion) {
+    contenedor.innerHTML = `<article class="detalle-comunicado"><p class="etiqueta">Publicación no encontrada</p><h2>No pudimos encontrar la actividad solicitada</h2><a class="boton boton-azul" href="/proyectos/">Volver a proyectos</a></article>`;
+    return;
+  }
+
+  document.title = `${publicacion.titulo} | ${proyecto.titulo}`;
+  const anterior = proyecto.publicaciones[indice - 1];
+  const siguiente = proyecto.publicaciones[indice + 1];
+  const enlace = (item) => `/publicacion/?proyecto=${encodeURIComponent(proyecto.id)}&id=${encodeURIComponent(crearIdPublicacion(item))}`;
+
+  contenedor.innerHTML = `
+    <article class="detalle-publicacion revelar">
+      <div class="migas-publicacion"><a href="/proyectos/">Proyectos</a><span>/</span><a href="/proyecto/?id=${encodeURIComponent(proyecto.id)}">${proyecto.titulo}</a></div>
+      <p class="etiqueta">${proyecto.titulo}</p>
+      <h1>${publicacion.titulo}</h1>
+      <span class="fecha">${publicacion.fecha}</span>
+      <p class="bajada-publicacion">${publicacion.descripcion}</p>
+      ${crearMedioPublicacion(publicacion, "medio-publicacion-detalle")}
+      <div class="acciones-publicacion">
+        <a class="boton boton-azul" href="/proyecto/?id=${encodeURIComponent(proyecto.id)}">Ver todas las publicaciones</a>
+        <button class="boton boton-compartir" type="button" data-compartir-publicacion>Compartir enlace</button>
+      </div>
+      <nav class="navegacion-publicaciones" aria-label="Otras publicaciones del proyecto">
+        ${anterior ? `<a href="${enlace(anterior)}"><small>Anterior</small><strong>${anterior.titulo}</strong></a>` : `<span></span>`}
+        ${siguiente ? `<a href="${enlace(siguiente)}"><small>Siguiente</small><strong>${siguiente.titulo}</strong></a>` : `<span></span>`}
+      </nav>
+    </article>`;
+
+  const botonCompartir = contenedor.querySelector("[data-compartir-publicacion]");
+  botonCompartir?.addEventListener("click", async () => {
+    try {
+      if (navigator.share) await navigator.share({ title: publicacion.titulo, text: publicacion.descripcion, url: window.location.href });
+      else {
+        await navigator.clipboard.writeText(window.location.href);
+        botonCompartir.textContent = "Enlace copiado";
+      }
+    } catch (error) {
+      if (error?.name !== "AbortError") botonCompartir.textContent = "Copiar enlace manualmente";
+    }
+  });
 }
 
 function cargarEmbedsInstagram() {
@@ -1193,6 +1350,7 @@ crearComunicados();
 crearDetalleComunicado();
 crearProyectos();
 crearDetalleProyecto();
+crearDetallePublicacion();
 crearPublicacionesApal();
 crearRecursos();
 crearDetalleRecurso();
