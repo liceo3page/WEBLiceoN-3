@@ -1,5 +1,27 @@
 // Cambia estos datos durante el año para actualizar el sitio.
+const fotosTorneoInternoAjedrez2026 = Array.from(
+  { length: 16 },
+  (_, indice) => `/img/proyectos/biblioteca/torneo-interno-2026/${String(indice + 1).padStart(2, "0")}.webp`
+);
+
+const textoTorneoInternoAjedrez2026 = [
+  "En horas de la tarde se realizó el Torneo Interno de Ajedrez del Liceo N.° 3. A lo largo de cinco rondas, los estudiantes demostraron sus habilidades, concentración y estrategias frente al tablero, compartiendo una jornada marcada por el respeto, el entusiasmo y la sana competencia.",
+  "Agradecemos especialmente a Silvana, Estefany, José María y Alicia, auxiliares de servicio, por dejar el espacio en óptimas condiciones para el desarrollo de la actividad.",
+  "Nuestro reconocimiento también para Héctor, Laura, Silvana y Giuliana, así como para los administrativos, adscriptos y estudiantes que colaboraron en el armado y la organización del evento.",
+  "Destacamos el trabajo de los profesores organizadores Yoici, Kimair, José y Francisco, y agradecemos a Cristian por el diseño de las medallas y del afiche que acompañaron esta edición del torneo.",
+  "Finalmente, agradecemos al equipo directivo por su apoyo a la actividad. Esta jornada fue posible gracias al compromiso y al trabajo colectivo de toda la comunidad educativa. A todos quienes aportaron para hacerla realidad: ¡muchas gracias!"
+];
+
 const comunicados = [
+  {
+    id: "torneo-interno-ajedrez-realizado-2026",
+    titulo: "Se realizó el Torneo Interno de Ajedrez",
+    fecha: "24 de agosto de 2026",
+    descripcion: "Estudiantes del liceo compartieron una jornada de estrategia, concentración y convivencia en el Torneo Interno de Ajedrez.",
+    imagen: "/img/proyectos/biblioteca/torneo-interno-2026/01.webp",
+    galeria: fotosTorneoInternoAjedrez2026,
+    contenido: textoTorneoInternoAjedrez2026
+  },
   {
     id: "torneo-interno-ajedrez-2026",
     titulo: "Torneo interno de ajedrez",
@@ -180,6 +202,15 @@ const proyectos = [
     portada: "/img/proyectos/biblioteca/portada-joven-lector.webp",
     imagenDetalle: "/img/proyectos/biblioteca/ajedrez-03.jpg",
     publicaciones: [
+      {
+        id: "torneo-interno-ajedrez-2026",
+        titulo: "Torneo Interno de Ajedrez 2026",
+        fecha: "24 de agosto de 2026",
+        descripcion: "El liceo vivió una jornada de estrategia, concentración y convivencia con una destacada participación estudiantil. El encuentro finalizó con la entrega de medallas y presentes.",
+        tipo: "galeria",
+        recursos: fotosTorneoInternoAjedrez2026,
+        contenido: textoTorneoInternoAjedrez2026
+      },
       {
         titulo: "Juegos Narrativos Nacionales 2026",
         fecha: "11 de agosto de 2026",
@@ -776,6 +807,21 @@ function crearDetalleComunicado() {
     `
     : "";
 
+  const galeria = comunicado.galeria?.length
+    ? `
+      <section class="galeria-comunicado" aria-labelledby="tituloGaleriaComunicado">
+        <p class="etiqueta">Galería de la jornada</p>
+        <h3 id="tituloGaleriaComunicado">Imágenes del torneo</h3>
+        <div class="galeria-publicacion galeria-comunicado-grid">
+          ${comunicado.galeria.map((recurso, indice) => `
+            <button class="boton-imagen-galeria" type="button" data-imagen="${recurso}" data-descripcion="${comunicado.titulo} — imagen ${indice + 1}" aria-label="Ampliar imagen ${indice + 1}">
+              <img src="${recurso}" alt="${comunicado.titulo} — imagen ${indice + 1}">
+            </button>
+          `).join("")}
+        </div>
+      </section>`
+    : "";
+
   contenedor.innerHTML = `
     <article class="detalle-comunicado revelar">
       ${comunicado.fecha ? `<span class="fecha ${comunicado.inscripcionesCerradas ? "fecha-cerrada" : ""}">${comunicado.fecha}</span>` : ""}
@@ -793,6 +839,7 @@ function crearDetalleComunicado() {
           ${imagen}
         </div>
       </div>
+      ${galeria}
       ${resultados}
     </article>
   `;
@@ -1003,6 +1050,9 @@ function crearDetallePublicacion() {
       <h1>${publicacion.titulo}</h1>
       <span class="fecha">${publicacion.fecha}</span>
       <p class="bajada-publicacion">${publicacion.descripcion}</p>
+      ${publicacion.contenido?.length
+        ? `<div class="texto-publicacion-completo">${publicacion.contenido.map((parrafo) => `<p>${parrafo}</p>`).join("")}</div>`
+        : ""}
       ${crearMedioPublicacion(publicacion, "medio-publicacion-detalle")}
       <div class="acciones-publicacion">
         <a class="boton boton-azul" href="/proyecto/?id=${encodeURIComponent(proyecto.id)}">Ver todas las publicaciones</a>
