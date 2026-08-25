@@ -1089,8 +1089,10 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.galeria-comunicado-grid img {
+.galeria-publicacion.galeria-comunicado-grid img {
   height: 260px;
+  object-fit: contain;
+  background: #edf3fb;
 }
 
 @media (max-width: 760px) {
@@ -1098,7 +1100,7 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .galeria-comunicado-grid img {
+  .galeria-publicacion.galeria-comunicado-grid img {
     height: 210px;
   }
 }

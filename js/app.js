@@ -4,6 +4,15 @@ const fotosTorneoInternoAjedrez2026 = Array.from(
   (_, indice) => `/img/proyectos/biblioteca/torneo-interno-2026/${String(indice + 1).padStart(2, "0")}.webp`
 );
 
+const fotosProyectoTorneoInternoAjedrez2026 = [
+  fotosTorneoInternoAjedrez2026[0],
+  fotosTorneoInternoAjedrez2026[1],
+  fotosTorneoInternoAjedrez2026[6],
+  fotosTorneoInternoAjedrez2026[9],
+  fotosTorneoInternoAjedrez2026[12],
+  fotosTorneoInternoAjedrez2026[15]
+];
+
 const textoTorneoInternoAjedrez2026 = [
   "En horas de la tarde se realizó el Torneo Interno de Ajedrez del Liceo N.° 3. A lo largo de cinco rondas, los estudiantes demostraron sus habilidades, concentración y estrategias frente al tablero, compartiendo una jornada marcada por el respeto, el entusiasmo y la sana competencia.",
   "Agradecemos especialmente a Silvana, Estefany, José María y Alicia, auxiliares de servicio, por dejar el espacio en óptimas condiciones para el desarrollo de la actividad.",
@@ -208,7 +217,7 @@ const proyectos = [
         fecha: "24 de agosto de 2026",
         descripcion: "El liceo vivió una jornada de estrategia, concentración y convivencia con una destacada participación estudiantil. El encuentro finalizó con la entrega de medallas y presentes.",
         tipo: "galeria",
-        recursos: fotosTorneoInternoAjedrez2026,
+        recursos: fotosProyectoTorneoInternoAjedrez2026,
         contenido: textoTorneoInternoAjedrez2026
       },
       {
@@ -1028,8 +1037,9 @@ function crearDetallePublicacion() {
   if (!contenedor) return;
 
   const parametros = new URLSearchParams(window.location.search);
-  const proyecto = proyectos.find((item) => item.id === parametros.get("proyecto"));
-  const id = parametros.get("id");
+  const limpiarParametro = (valor) => valor?.trim().replace(/[.,;:!?]+$/, "");
+  const proyecto = proyectos.find((item) => item.id === limpiarParametro(parametros.get("proyecto")));
+  const id = limpiarParametro(parametros.get("id"));
   const indice = proyecto?.publicaciones.findIndex((item) => crearIdPublicacion(item) === id) ?? -1;
   const publicacion = indice >= 0 ? proyecto.publicaciones[indice] : null;
 
