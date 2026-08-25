@@ -2049,6 +2049,14 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  .detalle-comunicado.revelar,
+  .detalle-proyecto.revelar,
+  .detalle-publicacion.revelar {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   .barra-navegacion {
     min-height: 68px;
   }
