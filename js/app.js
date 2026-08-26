@@ -23,6 +23,26 @@ const textoTorneoInternoAjedrez2026 = [
 
 const comunicados = [
   {
+    id: "declaratoria-independencia-2026",
+    titulo: "El Liceo N.º 3 participó en la conmemoración de la Declaratoria de la Independencia",
+    fecha: "25 de agosto de 2026",
+    descripcion: "Nuestra comunidad educativa participó del acto conmemorativo en Plaza Artigas y del posterior desfile por el 201.º aniversario de la Declaratoria de la Independencia.",
+    imagen: "/img/comunicados/declaratoria-independencia-2026/01.webp",
+    video: "/img/comunicados/declaratoria-independencia-2026/desfile.mp4",
+    tituloVideo: "El Liceo N.º 3 en el desfile conmemorativo",
+    tituloGaleria: "Imágenes del acto y el desfile",
+    galeria: Array.from(
+      { length: 6 },
+      (_, indice) => `/img/comunicados/declaratoria-independencia-2026/${String(indice + 1).padStart(2, "0")}.webp`
+    ),
+    contenido: [
+      "Nuestra institución participó del acto conmemorativo realizado en Plaza Artigas y del posterior desfile por el 201.º aniversario de la Declaratoria de la Independencia.",
+      "Felicitamos especialmente a los integrantes del Cuadro de Honor y a todos los estudiantes que estuvieron presentes, representando al Liceo N.º 3 con responsabilidad, respeto y compromiso durante esta significativa jornada.",
+      "Agradecemos a los docentes que acompañaron a la delegación y a los funcionarios que colaboraron en la organización, haciendo posible nuestra participación.",
+      "Felicitamos a todos por representar con orgullo a nuestra institución y por honrar, con su presencia y actitud, una fecha fundamental de nuestra historia nacional."
+    ]
+  },
+  {
     id: "torneo-interno-ajedrez-realizado-2026",
     titulo: "Se realizó el Torneo Interno de Ajedrez",
     fecha: "24 de agosto de 2026",
@@ -820,7 +840,7 @@ function crearDetalleComunicado() {
     ? `
       <section class="galeria-comunicado" aria-labelledby="tituloGaleriaComunicado">
         <p class="etiqueta">Galería de la jornada</p>
-        <h3 id="tituloGaleriaComunicado">Imágenes del torneo</h3>
+        <h3 id="tituloGaleriaComunicado">${comunicado.tituloGaleria || "Imágenes de la jornada"}</h3>
         <div class="galeria-publicacion galeria-comunicado-grid">
           ${comunicado.galeria.map((recurso, indice) => `
             <button class="boton-imagen-galeria" type="button" data-imagen="${recurso}" data-descripcion="${comunicado.titulo} — imagen ${indice + 1}" aria-label="Ampliar imagen ${indice + 1}">
@@ -828,6 +848,18 @@ function crearDetalleComunicado() {
             </button>
           `).join("")}
         </div>
+      </section>`
+    : "";
+
+  const video = comunicado.video
+    ? `
+      <section class="video-comunicado" aria-labelledby="tituloVideoComunicado">
+        <p class="etiqueta">Video de la jornada</p>
+        <h3 id="tituloVideoComunicado">${comunicado.tituloVideo || comunicado.titulo}</h3>
+        <video controls preload="metadata" playsinline poster="${comunicado.imagen}">
+          <source src="${comunicado.video}" type="video/mp4">
+          Tu navegador no permite reproducir este video.
+        </video>
       </section>`
     : "";
 
@@ -848,6 +880,7 @@ function crearDetalleComunicado() {
           ${imagen}
         </div>
       </div>
+      ${video}
       ${galeria}
       ${resultados}
     </article>
