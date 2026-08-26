@@ -24,10 +24,10 @@ const textoTorneoInternoAjedrez2026 = [
 const comunicados = [
   {
     id: "declaratoria-independencia-2026",
-    titulo: "El Liceo N.º 3 participó en la conmemoración de la Declaratoria de la Independencia",
+    titulo: "El Liceo N.º 3 participó en la conmemoración de la Independencia",
     fecha: "25 de agosto de 2026",
     descripcion: "Nuestra comunidad educativa participó del acto conmemorativo en Plaza Artigas y del posterior desfile por el 201.º aniversario de la Declaratoria de la Independencia.",
-    imagen: "/img/comunicados/declaratoria-independencia-2026/01.webp",
+    imagen: "/img/comunicados/declaratoria-independencia-2026/05.webp",
     video: "/img/comunicados/declaratoria-independencia-2026/desfile.mp4",
     tituloVideo: "El Liceo N.º 3 en el desfile conmemorativo",
     tituloGaleria: "Imágenes del acto y el desfile",
@@ -864,7 +864,7 @@ function crearDetalleComunicado() {
     : "";
 
   contenedor.innerHTML = `
-    <article class="detalle-comunicado revelar">
+    <article class="detalle-comunicado revelar ${comunicado.id === "declaratoria-independencia-2026" ? "detalle-comunicado-titulo-extenso" : ""}">
       ${comunicado.fecha ? `<span class="fecha ${comunicado.inscripcionesCerradas ? "fecha-cerrada" : ""}">${comunicado.fecha}</span>` : ""}
       <h2>${comunicado.titulo}</h2>
       <div class="detalle-comunicado-grid">
