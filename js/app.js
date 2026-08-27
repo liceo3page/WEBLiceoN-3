@@ -71,12 +71,12 @@ const comunicados = [
   },
   {
     id: "bono-colaboracion-apal-setiembre",
-    titulo: "Bono Colaboración APAL",
+    titulo: "Bono Colaboración AFAL",
     fecha: "Sorteo: 4 de septiembre de 2026",
     descripcion: "Los estudiantes ya tienen los bonos para la venta. Tu colaboración ayuda a fortalecer las iniciativas de nuestra comunidad educativa.",
     imagen: "/img/apal/bono-colaboracion-setiembre-horizontal.png",
     contenido: [
-      "APAL invita a toda la comunidad educativa a colaborar con una nueva edición del Bono Colaboración.",
+      "AFAL invita a toda la comunidad educativa a colaborar con una nueva edición del Bono Colaboración.",
       "El primer premio es una canasta dulce y el segundo, un set de termo, mate y bombilla. El sorteo se realizará el 4 de septiembre de 2026.",
       "Los estudiantes ya recibieron los bonos para la venta. ¡Gracias por acompañar y apoyar al Liceo N.° 3!"
     ]
@@ -490,14 +490,14 @@ const publicacionesApal = [
   {
     titulo: "Bono Colaboración · Sorteo de septiembre",
     fecha: "Sorteo: 4 de septiembre de 2026",
-    descripcion: "Los estudiantes ya tienen los bonos para la venta. Primer premio: canasta dulce. Segundo premio: termo, mate y bombilla. ¡Gracias por apoyar las iniciativas de APAL!",
+    descripcion: "Los estudiantes ya tienen los bonos para la venta. Primer premio: canasta dulce. Segundo premio: termo, mate y bombilla. ¡Gracias por apoyar las iniciativas de AFAL!",
     tipo: "galeria",
     recursos: ["/img/apal/bono-colaboracion-setiembre-horizontal.png"]
   },
   {
     titulo: "Bono Colaboración: agradecimiento a la comunidad",
     fecha: "10 de julio de 2026",
-    descripcion: "APAL agradece a estudiantes, familias y colaboradores que hicieron posible esta iniciativa. Cada aporte contribuye al crecimiento de nuestra comunidad educativa.",
+    descripcion: "AFAL agradece a estudiantes, familias y colaboradores que hicieron posible esta iniciativa. Cada aporte contribuye al crecimiento de nuestra comunidad educativa.",
     tipo: "galeria",
     recursos: [
       "/img/apal/bono-colaboracion-julio-1.jpg",
@@ -508,7 +508,7 @@ const publicacionesApal = [
   {
     titulo: "Sorteo y entrega del Bono Colaboración",
     fecha: "23 de junio de 2026",
-    descripcion: "Compartimos el sorteo y la entrega del premio del Bono Colaboración, una propuesta impulsada con el compromiso de APAL y el apoyo de las familias y estudiantes.",
+    descripcion: "Compartimos el sorteo y la entrega del premio del Bono Colaboración, una propuesta impulsada con el compromiso de AFAL y el apoyo de las familias y estudiantes.",
     tipo: "galeria",
     recursos: [
       "/img/apal/bono-colaboracion-junio-1.jpg",
@@ -517,9 +517,9 @@ const publicacionesApal = [
     enlaceInstagram: "https://www.instagram.com/p/DZ7wooelV39/"
   },
   {
-    titulo: "Beneficio y acción de APAL",
+    titulo: "Beneficio y acción de AFAL",
     fecha: "2026",
-    descripcion: "Publicación de APAL con información para estudiantes, familias y la comunidad educativa del Liceo N.º 3.",
+    descripcion: "Publicación de AFAL con información para estudiantes, familias y la comunidad educativa del Liceo N.º 3.",
     tipo: "galeria",
     recursos: [
       "/img/apal/beneficio-apal-1.webp",

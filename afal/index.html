@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recursos y plataformas educativas para estudiantes, familias y docentes del Liceo N.° 3 de Rivera.">
+  <meta name="description" content="Información, beneficios y acciones de la AFAL del Liceo N.° 3 Brigadier General Juan Antonio Lavalleja de Rivera.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Recursos | Liceo N.° 3 de Rivera">
-  <meta property="og:description" content="Accesos a plataformas, bibliotecas y sitios educativos oficiales.">
-  <meta property="og:image" content="https://liceo3rivera.com/img/social/recursos.png">
+  <meta property="og:title" content="AFAL | Liceo N.° 3 de Rivera">
+  <meta property="og:description" content="Acciones y propuestas de la Asociación de Familias de Alumnos del Liceo.">
+  <meta property="og:image" content="https://liceo3rivera.com/img/social/afal.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Vista previa de Recursos del Liceo N.° 3 de Rivera">
+  <meta property="og:image:alt" content="Vista previa de AFAL del Liceo N.° 3 de Rivera">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Recursos | Liceo N.° 3 Brigadier General Juan Antonio Lavalleja</title>
+  <title>AFAL | Liceo N.° 3 Brigadier General Juan Antonio Lavalleja</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/css/estilos.css?v=afal-2026-1">
 </head>
 <body>
   <header class="encabezado" id="encabezado">
@@ -33,29 +33,49 @@
   </header>
 
   <main>
-    <section class="pagina-encabezado">
+    <section class="pagina-encabezado pagina-apal">
       <div class="contenedor pagina-encabezado-grid">
         <div>
-          <p class="etiqueta etiqueta-clara">Recursos</p>
-          <h1>Herramientas para aprender, enseñar y acompañar</h1>
-          <p>Plataformas, bibliotecas, cursos y sitios oficiales para estudiantes, familias y docentes.</p>
+          <p class="etiqueta etiqueta-clara">AFAL</p>
+          <h1>Asociación de Familias de Alumnos del Liceo</h1>
+          <p>Espacio de participación de las familias que colabora con la gestión del centro educativo, las actividades culturales, las mejoras edilicias y el apoyo a los estudiantes.</p>
         </div>
-        <div class="recursos-encabezado-visual revelar" aria-hidden="true">
-          <span class="recurso-icono recurso-icono-libro">📚</span>
-          <span class="recurso-icono recurso-icono-pantalla">💻</span>
-          <span class="recurso-icono recurso-icono-idea">💡</span>
-          <strong>Recursos educativos</strong>
+        <div class="apal-destacado apal-destacado-imagen revelar">
+          <img src="/img/afal/logo-afal-rectangular.png" alt="Identidad visual de AFAL">
         </div>
       </div>
     </section>
-    <section class="seccion seccion-azul">
-      <div class="contenedor">
+
+    <section class="seccion">
+      <div class="contenedor apal-presentacion">
         <div class="encabezado-seccion revelar">
-          <p class="etiqueta etiqueta-clara">Biblioteca de enlaces</p>
-          <h2>Accesos útiles y confiables</h2>
-          <p>Elegí una plataforma para ingresar directamente a su sitio oficial.</p>
+          <p class="etiqueta">Muro AFAL</p>
+          <h2>Beneficios y acciones realizadas</h2>
+          <p>Este espacio reúne publicaciones sobre los aportes de AFAL al liceo: apoyos concretos, mejoras, actividades, compras, colaboraciones y beneficios para estudiantes.</p>
         </div>
-        <div class="grilla-recursos" id="contenedorRecursos"></div>
+        <div class="apal-resumen revelar">
+          <article>
+            <span>01</span>
+            <h3>Gestión y apoyo</h3>
+            <p>Colaboración con necesidades del centro educativo y acompañamiento a la comunidad.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Actividades culturales</h3>
+            <p>Participación en propuestas que fortalecen la vida institucional del liceo.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mejoras y beneficios</h3>
+            <p>Apoyo a mejoras edilicias, recursos y acciones para los estudiantes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-clara">
+      <div class="contenedor">
+        <div class="apal-muro" id="contenedorApal"></div>
       </div>
     </section>
   </main>
@@ -64,9 +84,9 @@
     <div class="contenedor pie-grid">
       <div><strong>Liceo N.° 3 “Brigadier General Juan Antonio Lavalleja”</strong><p>Sitio institucional · <span id="anioActual"></span></p></div>
       <div class="contacto-pie"><p><strong>Contacto</strong></p><p>Dirección: Tranqueras 853</p><p>Teléfono: 4622 3244</p><p>Departamento: Rivera</p><p>Turnos: Diurno matutino extendido, diurno vespertino extendido y nocturno</p><a class="instagram-pie" href="https://www.instagram.com/liceo_3rivera/" target="_blank" rel="noopener noreferrer" aria-label="Instagram del Liceo N.° 3"><img src="/img/instagram.jpg" alt="Instagram"></a></div>
-      <nav class="enlaces-pie" aria-label="Enlaces rapidos"><a href="/">Inicio</a><a href="/institucional/">Institucional</a><a href="/comunicados/">Comunicados</a><a href="/proyectos/">Proyectos</a><a href="/galeria/">Galería</a></nav>
+      <nav class="enlaces-pie" aria-label="Enlaces rapidos"><a href="/">Inicio</a><a href="/institucional/">Institucional</a><a href="/proyectos/">Proyectos</a><a href="/afal/">AFAL</a><a href="/recursos/">Recursos</a><a href="/galeria/">Galería</a></nav>
     </div>
   </footer>
-  <script src="/js/app.js"></script>
+  <script src="/js/app.js?v=afal-2026-1"></script>
 </body>
 </html>
